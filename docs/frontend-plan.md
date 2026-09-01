@@ -426,7 +426,48 @@ killing the tab mid-session loses nothing; replaying a flush changes no state.
 
 ---
 
-## 4. Phase 3 — Everything around the loop
+## 4. Phase 3 — Everything around the loop ✅ BUILT (untested against a real session)
+
+Every authenticated screen lives in the `app/(app)/` route group, whose layout
+does the auth gate once (`currentUserId()` → `redirect("/")`) and renders the nav.
+`/study` and `/home` are **inside** the group — they were briefly outside it,
+which left `/study` looking like a separate app and `/home` with no nav at all on
+desktop.
+
+The group layout is a `100svh` flex column: nav on top, `<main>` taking the rest
+with `overflow-y-auto`. That exists so the study loop can say `h-full` and fill
+what's left instead of hard-coding the chrome's height. Consequence: app screens
+scroll **inside `<main>`**, not the document — which is what makes the fixed
+BottomNav behave, but does forfeit mobile Safari's URL-bar auto-hide.
+
+Nav is two components for two widths, both driven by one `primary` array in
+`AppBottomNav.tsx`: pouf's `BottomNav` shows itself only below 900px in CSS, so
+`AppNav` renders a `NavLink` strip above that with `min-[901px]:flex`. The
+registry's `Navbar` was installed and then removed — it emits raw `<a>`, so every
+nav click would be a full page reload.
+
+| Screen | Files | Notes |
+|---|---|---|
+| `/browse` | `app/(app)/browse/`, `components/browse/BrowseList.tsx` | `q` + `filter` in the URL via `nuqs` `useQueryStates` (`throttleMs: 300`). Includes the **"All wrongs"** filter. Cursor paging via a "Load more" button. A stale-response guard drops out-of-order results. |
+| `/words/[id]` | `app/(app)/words/[id]/` | Server component, reads Prisma directly. Confusables **are** here, plus the last 10 reviews, deck membership, and the saved hook. |
+| `/stats` | `components/stats/StatsView.tsx` | Client, fetches `/api/stats` rather than re-deriving the streak and 28-day window in the page. Bars are labelled by day-of-month; 28 full dates are illegible at phone width. |
+| `/settings` | `components/settings/SettingsForm.tsx` | Optimistic PATCH; rolls back to the previous value, not `initial`. Exposes `sound`. |
+| `/decks` | `components/decks/DeckPicker.tsx` | Writes `activeDeckId`. Also selectable from `/settings`. |
+| PWA | `app/manifest.ts`, `appleWebApp` in the root layout | `viewport-fit=cover` was already set in Phase 1; `env(safe-area-inset-bottom)` is on the group layout. |
+
+**Known gaps:**
+
+- **`speech` is a switch that does nothing.** The setting has always existed and
+  is now exposed in the UI; no speech synthesis is wired up.
+- **`/api/decks` is now unused** — `/decks` and `/settings` are server components
+  and read Prisma directly. The route still works; nothing calls it.
+- **Curated decks still don't exist** (open question 2), so `/decks` lists only
+  `gregmat-all` and the 36 group decks.
+- **No icons beyond `favicon.ico`** in the manifest, so the installed PWA icon
+  will be poor. Needs real 192/512 PNGs.
+- Nothing here has been exercised by a signed-in session.
+
+### Original Phase 3 checklist
 
 - **`/browse`** — search + filters via `/api/words`. Must include the **"all wrongs"**
   filter (`?filter=wrong`, `lapses > 0`) — an explicit request from Sharvarii.

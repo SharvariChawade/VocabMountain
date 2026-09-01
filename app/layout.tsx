@@ -5,6 +5,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Vocab Mountain",
   description: "Build a stronger vocabulary, one word at a time.",
+  appleWebApp: { capable: true, statusBarStyle: "default", title: "Vocab" },
 };
 
 export const viewport: Viewport = {

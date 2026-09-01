@@ -255,7 +255,9 @@ function StudyLayout({
   children: ReactNode;
 }) {
   return (
-    <div className="mx-auto flex h-[100svh] w-full max-w-md flex-col gap-(--s4) px-(--s4) pt-(--s4) pb-[calc(var(--s4)+env(safe-area-inset-bottom,0px))]">
+    // h-full, not 100svh: the (app) shell owns the viewport height and the nav
+    // clearance, so the loop just fills what's left of it.
+    <div className="mx-auto flex h-full w-full max-w-md flex-col gap-(--s4)">
       {header && <div className="shrink-0">{header}</div>}
       <div className="flex min-h-0 flex-1 items-center justify-center">{children}</div>
       {footer && <div className="shrink-0">{footer}</div>}
