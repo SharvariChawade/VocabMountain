@@ -2,8 +2,8 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { BottomNav, type NavGroup, type NavItem } from "@/src/components/pouf/BottomNav";
-import type { LinkComponent } from "@/src/components/pouf/NavLink";
+import { BottomNav, type NavGroup, type NavItem } from "@/components/pouf/BottomNav";
+import type { LinkComponent } from "@/components/pouf/NavLink";
 
 const primary: NavItem[] = [
   { href: "/home", label: "Home", icon: "overview", tone: "purple" },

@@ -188,6 +188,7 @@ model UserSettings {
   showRoots     Boolean @default(true)
   keyboardHints Boolean @default(true)
   speech        Boolean @default(false)
+  sound         Boolean @default(true)
   activeDeckId  String?
   user          User    @relation(fields: [userId], references: [id], onDelete: Cascade)
 

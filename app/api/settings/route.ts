@@ -11,6 +11,7 @@ const Patch = z.object({
   showRoots: z.boolean().optional(),
   keyboardHints: z.boolean().optional(),
   speech: z.boolean().optional(),
+  sound: z.boolean().optional(),
   activeDeckId: z.string().nullable().optional(),
 });
 

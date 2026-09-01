@@ -18,6 +18,7 @@ const DEFAULTS = {
   showRoots: true,
   keyboardHints: true,
   speech: false,
+  sound: true,
   activeDeckId: null as string | null,
 };
 
