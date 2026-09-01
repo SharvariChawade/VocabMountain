@@ -255,12 +255,14 @@ function StudyLayout({
   children: ReactNode;
 }) {
   return (
-    // h-full, not 100svh: the (app) shell owns the viewport height and the nav
-    // clearance, so the loop just fills what's left of it.
-    <div className="mx-auto flex h-full w-full max-w-md flex-col gap-(--s4)">
-      {header && <div className="shrink-0">{header}</div>}
-      <div className="flex min-h-0 flex-1 items-center justify-center">{children}</div>
-      {footer && <div className="shrink-0">{footer}</div>}
+    // A three-row grid, not a flex column: minmax(0,1fr) gives the card row a
+    // genuinely bounded height, so the header and footer rows can never be
+    // pushed out of view no matter how long the word's back face is.
+    // The (app) shell owns the viewport height; this just fills what's left.
+    <div className="mx-auto grid h-full w-full max-w-md grid-rows-[auto_minmax(0,1fr)_auto] gap-(--s4)">
+      <div>{header}</div>
+      <div className="flex min-h-0 justify-center">{children}</div>
+      <div>{footer}</div>
     </div>
   );
 }

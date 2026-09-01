@@ -95,7 +95,9 @@ export function SwipeCard({
   }
 
   return (
-    <div className="relative flex w-full max-w-md max-h-full">
+    // h-full (not max-h-full) so the card's own max-h-full has a definite
+    // height to resolve against; items-center keeps a short card centred.
+    <div className="relative flex h-full w-full max-w-md items-center">
       <motion.div
         drag
         dragElastic={0.6}

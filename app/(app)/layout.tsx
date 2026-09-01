@@ -13,7 +13,9 @@ export default async function AppLayout({ children }: LayoutProps<"/">) {
       <div className="shrink-0">
         <AppNav />
       </div>
-      <main className="min-h-0 flex-1 overflow-y-auto">{children}</main>
+      {/* overflow-x-hidden so the study card's fly-out (it translates a full
+          viewport width) can't open a transient horizontal scrollbar. */}
+      <main className="min-h-0 flex-1 overflow-y-auto overflow-x-hidden">{children}</main>
     </div>
   );
 }
