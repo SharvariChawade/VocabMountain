@@ -1,11 +1,11 @@
 "use client";
 
 import { AnimatePresence } from "motion/react";
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState, type ReactNode } from "react";
 import { parseAsBoolean, parseAsString, useQueryStates } from "nuqs";
 import { Button } from "@/components/pouf/Button";
 import { Empty, ErrorNote, Skeleton } from "@/components/pouf/feedback";
-import { Row, Shell, Stack } from "@/components/pouf/layout";
+import { Row, Stack } from "@/components/pouf/layout";
 import { Text } from "@/components/pouf/text";
 import { bury, enqueueGrade, flush, startGradeQueue } from "@/lib/grade-queue";
 import { play, preloadSfx, setSoundEnabled } from "@/lib/sfx";
@@ -156,26 +156,26 @@ export function StudySession({ settings }: { settings: StudySettings }) {
 
   if (loading) {
     return (
-      <Shell>
+      <StudyLayout>
         <Skeleton variant="card" />
-      </Shell>
+      </StudyLayout>
     );
   }
 
   if (error && !row) {
     return (
-      <Shell>
+      <StudyLayout>
         <Stack gap={4}>
           <ErrorNote>Couldn&apos;t load your queue.</ErrorNote>
           <Button onClick={() => void load(true)}>Try again</Button>
         </Stack>
-      </Shell>
+      </StudyLayout>
     );
   }
 
   if (!row) {
     return (
-      <Shell>
+      <StudyLayout>
         <Stack gap={5}>
           <Empty icon="trophy" title="Caught up">
             {done > 0 ? `${done} ${done === 1 ? "word" : "words"} today.` : "Nothing due right now."}
@@ -186,13 +186,15 @@ export function StudySession({ settings }: { settings: StudySettings }) {
             </Button>
           )}
         </Stack>
-      </Shell>
+      </StudyLayout>
     );
   }
 
+  // Viewport-height column: the card region flexes and the actions stay pinned,
+  // so grading never requires scrolling on any screen size.
   return (
-    <Shell>
-      <Stack gap={5}>
+    <StudyLayout
+      header={
         <Row justify="between">
           <Text size="sm" muted>
             {done} done
@@ -201,22 +203,8 @@ export function StudySession({ settings }: { settings: StudySettings }) {
             {queue.length - index} left
           </Text>
         </Row>
-
-        <div className="flex justify-center">
-          <AnimatePresence mode="popLayout">
-            <SwipeCard
-              key={row.word.id}
-              row={row}
-              settings={settings}
-              revealed={revealed}
-              hook={hook}
-              onHookChange={setHook}
-              onReveal={() => setRevealed(true)}
-              onCommit={commit}
-            />
-          </AnimatePresence>
-        </div>
-
+      }
+      footer={
         <Stack gap={3}>
           <Row gap={3} justify="center">
             <Button tone="pink" onClick={() => commit({ kind: "grade", knew: false })}>
@@ -239,7 +227,38 @@ export function StudySession({ settings }: { settings: StudySettings }) {
             </Row>
           )}
         </Stack>
-      </Stack>
-    </Shell>
+      }
+    >
+      <AnimatePresence mode="popLayout">
+        <SwipeCard
+          key={row.word.id}
+          row={row}
+          settings={settings}
+          revealed={revealed}
+          hook={hook}
+          onHookChange={setHook}
+          onReveal={() => setRevealed(true)}
+          onCommit={commit}
+        />
+      </AnimatePresence>
+    </StudyLayout>
+  );
+}
+
+function StudyLayout({
+  header,
+  footer,
+  children,
+}: {
+  header?: ReactNode;
+  footer?: ReactNode;
+  children: ReactNode;
+}) {
+  return (
+    <div className="mx-auto flex h-[100svh] w-full max-w-md flex-col gap-(--s4) px-(--s4) pt-(--s4) pb-[calc(var(--s4)+env(safe-area-inset-bottom,0px))]">
+      {header && <div className="shrink-0">{header}</div>}
+      <div className="flex min-h-0 flex-1 items-center justify-center">{children}</div>
+      {footer && <div className="shrink-0">{footer}</div>}
+    </div>
   );
 }

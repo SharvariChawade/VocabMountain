@@ -24,6 +24,25 @@ const STAGE_TONE: Record<Stage, Tone> = {
 
 export type Commit = { kind: "grade"; knew: boolean } | { kind: "skip" };
 
+/** Label above, chips below. Inline the label into the same wrapping Row and
+ * the chips reflow around it into a ragged staircase. */
+function WordChips({ label, words, tone }: { label: string; words: string[]; tone: Tone }) {
+  return (
+    <Stack gap={2}>
+      <Text size="sm" muted>
+        {label}
+      </Text>
+      <div className="flex min-w-0 flex-wrap gap-(--s2)">
+        {words.slice(0, 4).map((w) => (
+          <Badge key={w} tone={tone}>
+            {w}
+          </Badge>
+        ))}
+      </div>
+    </Stack>
+  );
+}
+
 type Props = {
   row: QueueRow;
   settings: StudySettings;
@@ -76,7 +95,7 @@ export function SwipeCard({
   }
 
   return (
-    <div className="relative w-full max-w-md">
+    <div className="relative flex w-full max-w-md max-h-full">
       <motion.div
         drag
         dragElastic={0.6}
@@ -101,37 +120,48 @@ export function SwipeCard({
         onTap={() => {
           if (!revealed) onReveal();
         }}
-        className="pouf-card bg-surface rounded-card cushion-card cursor-grab active:cursor-grabbing select-none px-(--s6) pt-[calc(var(--s6)-var(--lip)/2)] pb-[calc(var(--s6)+var(--lip)/2)]"
+        className="pouf-card flex w-full max-h-full flex-col bg-surface rounded-card cushion-card cursor-grab active:cursor-grabbing select-none px-(--s6) pt-[calc(var(--s6)-var(--lip)/2)] pb-[calc(var(--s6)+var(--lip)/2)]"
       >
-        <Stack gap={4}>
-          <Row justify="between">
-            <Row gap={2}>
-              <Dot tone={STAGE_TONE[row.stage]} />
-              <Text size="sm" muted>
-                {STAGE_LABEL[row.stage]}
-              </Text>
+        <div className="shrink-0">
+          <Stack gap={4}>
+            <Row justify="between">
+              <Row gap={2}>
+                <Dot tone={STAGE_TONE[row.stage]} />
+                <Text size="sm" muted>
+                  {STAGE_LABEL[row.stage]}
+                </Text>
+              </Row>
+              {word.partOfSpeech && <Badge tone="purple">{word.partOfSpeech}</Badge>}
             </Row>
-            {word.partOfSpeech && <Badge tone="purple">{word.partOfSpeech}</Badge>}
-          </Row>
 
-          <Stack gap={1}>
-            <Heading level={1}>{word.term}</Heading>
-            {word.pronunciation && (
+            <Stack gap={1}>
+              <Heading level={1}>{word.term}</Heading>
+              {word.pronunciation && (
+                <Text size="sm" muted>
+                  {word.pronunciation}
+                </Text>
+              )}
+            </Stack>
+
+            {!revealed && settings.sentenceFirst && word.blank && <Text>{word.blank}</Text>}
+
+            {!revealed && (
               <Text size="sm" muted>
-                {word.pronunciation}
+                Tap to reveal
               </Text>
             )}
           </Stack>
+        </div>
 
-          {!revealed && settings.sentenceFirst && word.blank && <Text>{word.blank}</Text>}
-
-          {!revealed && (
-            <Text size="sm" muted>
-              Tap to reveal
-            </Text>
-          )}
-
-          {revealed && (
+        {revealed && (
+          // touch-action pan-y, not a propagation stop: the browser takes the
+          // vertical gesture for scrolling and motion still gets the horizontal
+          // one, so a long back face scrolls without costing you left/right
+          // grading. Up-to-skip is the casualty here; the Skip button covers it.
+          <div
+            className="mt-(--s5) min-h-0 flex-1 overflow-y-auto overscroll-contain"
+            style={{ touchAction: "pan-y" }}
+          >
             <Stack gap={4}>
               <Text>{word.meaning}</Text>
 
@@ -141,39 +171,23 @@ export function SwipeCard({
                 </Text>
               )}
 
+              {/* Roots are a gloss ("ob- against, in the way of + via way"), not
+               * a label — a Badge is whitespace-nowrap and overflows the card. */}
               {settings.showRoots && word.root && (
-                <Row gap={2}>
+                <Stack gap={1}>
                   <Text size="sm" muted>
                     Root
                   </Text>
-                  <Badge tone="blue">{word.root}</Badge>
-                </Row>
+                  <Text size="sm">{word.root}</Text>
+                </Stack>
               )}
 
               {word.synonyms.length > 0 && (
-                <Row gap={2}>
-                  <Text size="sm" muted>
-                    Similar
-                  </Text>
-                  {word.synonyms.slice(0, 4).map((s) => (
-                    <Badge key={s} tone="mint">
-                      {s}
-                    </Badge>
-                  ))}
-                </Row>
+                <WordChips label="Similar" tone="mint" words={word.synonyms} />
               )}
 
               {word.antonyms.length > 0 && (
-                <Row gap={2}>
-                  <Text size="sm" muted>
-                    Opposite
-                  </Text>
-                  {word.antonyms.slice(0, 4).map((a) => (
-                    <Badge key={a} tone="orange">
-                      {a}
-                    </Badge>
-                  ))}
-                </Row>
+                <WordChips label="Opposite" tone="orange" words={word.antonyms} />
               )}
 
               {/* Stop propagation so typing in the hook never reads as a tap or drag. */}
@@ -187,8 +201,8 @@ export function SwipeCard({
                 />
               </div>
             </Stack>
-          )}
-        </Stack>
+          </div>
+        )}
       </motion.div>
 
       {/* Drag affordances. aria-hidden — the buttons below the card are the

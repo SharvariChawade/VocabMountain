@@ -258,6 +258,18 @@ and `/settings`, none of which exist).
 - **Prefetch appends instead of paging.** `/api/queue` has no cursor, so a
   refetch overlaps what we already hold; the client flushes first, then filters
   by `wordId` against a session-scoped `handled` set.
+- **The screen is a `100svh` column with a pinned footer**, not `Shell` — `Shell`
+  is a 260px-sidebar app shell and put the grade buttons below the fold. The
+  card region flexes; the back face scrolls inside the card via
+  `touch-action: pan-y`, which hands the browser the vertical gesture and leaves
+  motion the horizontal one. **Cost: up-to-skip does not fire inside the
+  scrolling back face** — the Skip button and `↑`/`S` still do. Skip works
+  everywhere on the unrevealed front.
+- **The root is plain text, not a `Badge`.** `Badge` is `whitespace-nowrap
+  flex-none`; a root gloss like "ob- against, in the way of + via way" is a
+  phrase and overflowed the card. Synonym/antonym labels also moved above their
+  chips — inlining a label into a wrapping row reflows the chips into a
+  staircase.
 
 **Not yet verified:** nobody has run a signed-in session. The gesture, the
 fly-out, sound on iOS, and offline replay are all unexercised.
