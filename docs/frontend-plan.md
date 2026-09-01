@@ -91,12 +91,17 @@ components/ui/button.tsx  shadcn leftover
 
 ---
 
-## 2. Phase 1 — Foundation ✅ DONE (except 1.6)
+## 2. Phase 1 — Foundation ✅ DONE
 
 Nothing else is worth building until these are true. Small phase, no product surface.
 
 **Status:** 1.1 ✅ · 1.2 ✅ (was already done) · 1.3 ✅ (was already done) · 1.4 ✅ ·
-1.5 ✅ · 1.6 ⛔ **blocked — must be run by hand** (see below).
+1.5 ✅ · 1.6 ✅
+
+**Theme:** light only, by user decision. `<html data-theme="light">` is pinned in
+`app/layout.tsx`; there is no theme script and no dark toggle. pouf.css keys dark
+off `[data-theme='dark']`, so restoring dark later means re-adding the no-flash
+script described in 1.4 — nothing else.
 
 Corrections found while executing:
 
@@ -178,23 +183,40 @@ pnpm add motion nuqs
   `nuqs/adapters/next/app` in `app/layout.tsx`.
 - Sound needs no dep — plain `new Audio()` is enough (see §2.7).
 
-### 1.6 Install the rest of the registry ⛔ BLOCKED — run this yourself
+### 1.6 Install the rest of the registry ✅ DONE
+
+`base.json` is **only the stylesheet** — it installs no components. The components
+are separate registry items, and they are grouped, not one-per-name:
 
 ```
-npx shadcn@latest add https://1st-pouf.worksonmy.dev/r/base.json
+npx shadcn@latest add --yes \
+  https://1st-pouf.worksonmy.dev/r/{surface,readout,feedback,input,controls,\
+segmented,toggle,charts,toast,toaster,progress,status}.json
 ```
 
-The permission classifier blocks this command for the agent. **Run it by hand
-before Phase 2 starts.** 1.1 is done, so it will land in one place.
+| item | gives you |
+|---|---|
+| `surface` | `Card`, `RowCard` |
+| `readout` | `Stat`, `Metric` |
+| `media` (pulled in by `feedback`) | `Blob`, `Badge`, `Dot`, `Figure` |
+| `feedback` | `Empty`, `Skeleton`, `ErrorNote` |
+| `input` | `Field`, `Input`, `Textarea`, `inputClasses` |
+| `controls` | `Switch`, `Select`, `Dialog`, `Confirm`, `Combobox`, `Tooltip` |
+| `charts` | `BarChart`, `AreaChart`, `LineChart`, `PieChart` |
+| `toast` / `toaster` | `Toast`, `ToastViewport`, `Toaster`, `toast()` |
+| `segmented` / `toggle` / `progress` / `status` | as named |
 
-15 of the 16 components below do not exist yet as `.tsx`; only `Shell` does
-(`components/pouf/layout.tsx`). pouf.css *already* carries complete styles for
-`Empty`, `Toasts` and `BarChart` (recharts-themed) — those need only their React
-wrappers. `Card`, `Badge`, `Dot`, `Stat`, `Blob`, `Segmented`, `ToggleGroup`,
-`Input`, `Textarea`, `Field` and `Switch` are built from the `@utility cushion-*`
-recipes plus `--tone`, matching the CVA pattern `Button.tsx` uses.
+`Shell` was already present in `layout.tsx`.
 
-Needed across the app:
+**Two registry files ship broken and were repaired locally.** `controls.tsx` and
+`progress.tsx` import Radix but call Base UI's `render={<El />}` prop; Radix uses
+`asChild`. `progress.tsx` additionally imported `framer-motion`, which is not a
+dependency of this project (we use `motion`). Fixed: 9 `render` → `asChild`
+conversions, and the import repointed to `motion/react`. This breaks the
+"`components/pouf/` is read-only" rule in §5 out of necessity — **re-running the
+registry install will overwrite these fixes.** Re-apply them if you do.
+
+Components needed across the app:
 `Card`, `RowCard`, `Badge`, `Dot`, `Stat`, `Segmented`, `ToggleGroup`, `Input`,
 `Textarea`, `Field`, `Switch`, `Shell`, `Empty`, `BarChart`, `Blob`, `Toasts`.
 
@@ -208,7 +230,39 @@ dark mode does not flash, `text-muted` is grey.
 
 ---
 
-## 3. Phase 2 — The study loop
+## 3. Phase 2 — The study loop ✅ BUILT (untested against a real session)
+
+**Files:** `app/study/page.tsx` (server shell: auth gate + settings) ·
+`components/study/StudySession.tsx` (queue, prefetch, keyboard, caught-up) ·
+`components/study/SwipeCard.tsx` (gesture + both faces) ·
+`components/study/types.ts` · `lib/grade-queue.ts` · `lib/sfx.ts` ·
+`scripts/make-sfx.ts` → `public/sfx/*.wav`.
+
+Reachable from `/home` via a "Start studying" link (a placeholder until the
+Phase 3 bottom nav lands — `AppBottomNav` still points at `/practice`, `/add`
+and `/settings`, none of which exist).
+
+**Deviations from the spec below, all deliberate:**
+
+- **No `dragSnapToOrigin`.** Its spring-back fires on `onDragEnd`, the same
+  handler that starts the commit fly-out, and the two fight. Spring-back is
+  animated by hand in the no-commit branch instead, so the paths stay disjoint.
+- **The flick threshold also requires `|offset.x| > 40`.** `|velocity.x| > 500`
+  alone will commit a grade on a 5px jitter. A misgrade is expensive here.
+- **Confusables are not on the card.** `/api/queue` doesn't return them — only
+  `/api/words/[id]` does — and fetching per card would violate §2.5. Add
+  `confusableWith` to the queue payload to finish §2.7.
+- **Per-card state resets during render, not in an effect.** React's
+  `set-state-in-effect` rule rejects the effect form, and an effect would paint
+  one frame of the new word showing the previous card's back.
+- **Prefetch appends instead of paging.** `/api/queue` has no cursor, so a
+  refetch overlaps what we already hold; the client flushes first, then filters
+  by `wordId` against a session-scoped `handled` set.
+
+**Not yet verified:** nobody has run a signed-in session. The gesture, the
+fly-out, sound on iOS, and offline replay are all unexercised.
+
+
 
 This is the product. Design spec §3: *"the core interaction. Everything else in
 the app is in service of it."* Build only this in Phase 2.
@@ -342,9 +396,10 @@ provider.
   (Note: the pre-existing `speech` field is a *different* setting; both now exist.)
 - Also mute when `prefers-reduced-motion` is set.
 
-Files go in `public/sfx/`. **Decided:** generate them — a throwaway Node script
-synthesises four short quiet WAVs, no dependencies. Not done yet; `lib/sfx.ts`
-does not exist. Do not ship silent placeholders.
+✅ Done. `scripts/make-sfx.ts` (run with `pnpm sfx`) synthesises the four cues
+into `public/sfx/` — sine partials with a fast exponential decay and a one-pole
+lowpass, 90–290ms, normalised to 0.55 peak with `lib/sfx.ts` playing at 0.3.
+Real audio, not silence. Regenerate freely; tweak the `CUES` table to retune.
 
 ### 2.7 Screens
 

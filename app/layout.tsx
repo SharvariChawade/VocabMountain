@@ -13,15 +13,11 @@ export const viewport: Viewport = {
   viewportFit: "cover",
 };
 
-// Runs before first paint so dark mode never flashes white.
-const themeScript = `try{var t=localStorage.getItem("theme");if(t!=="dark"&&t!=="light")t=matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";document.documentElement.dataset.theme=t}catch(e){}`;
-
+// Light only for now. pouf.css keys dark off [data-theme='dark'], so pinning
+// this here is enough — no theme script, nothing to flash.
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="en" className="h-full antialiased" suppressHydrationWarning>
-      <head>
-        <script dangerouslySetInnerHTML={{ __html: themeScript }} />
-      </head>
+    <html lang="en" data-theme="light" className="h-full antialiased">
       <body className="min-h-full flex flex-col">
         <NuqsAdapter>{children}</NuqsAdapter>
       </body>

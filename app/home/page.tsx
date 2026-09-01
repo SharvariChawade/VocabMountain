@@ -26,6 +26,13 @@ export default async function HomePage() {
             <SignOutButton />
           </div>
         </header>
+
+        <a
+          href="/study"
+          className="mt-(--s5) block rounded-card bg-purple px-(--s6) pt-[calc(var(--s6)-var(--lip)/2)] pb-[calc(var(--s6)+var(--lip)/2)] text-center text-lg font-black text-[var(--on-accent)] cushion-card"
+        >
+          Start studying
+        </a>
       </div>
       <div className="sm:hidden">
         <AppBottomNav />
