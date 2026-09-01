@@ -19,6 +19,10 @@ model User {
   sessions      Session[]
   accounts      Account[]
 
+  cards    Card[]
+  reviews  Review[]
+  settings UserSettings?
+
   @@map("user")
 }
 
@@ -70,4 +74,122 @@ model Verification {
 
   @@index([identifier])
   @@map("verification")
+}
+
+enum DeckKind {
+  GROUP
+  CURATED
+}
+
+enum Grade {
+  AGAIN
+  KNEW
+}
+
+model Word {
+  id            String   @id @default(cuid())
+  term          String   @unique
+  pronunciation String
+  partOfSpeech  String
+  meaning       String
+  example       String
+  blank         String
+  root          String
+  synonyms      String[]
+  antonyms      String[]
+
+  decks      DeckWord[]
+  cards      Card[]
+  reviews    Review[]
+  confusable Confusable[] @relation("confusableFrom")
+  confusedBy Confusable[] @relation("confusableTo")
+
+  @@index([root])
+  @@map("word")
+}
+
+model Deck {
+  id       String     @id @default(cuid())
+  slug     String     @unique
+  title    String
+  kind     DeckKind
+  position Int
+  words    DeckWord[]
+
+  @@map("deck")
+}
+
+model DeckWord {
+  deckId   String
+  wordId   String
+  position Int
+  deck     Deck   @relation(fields: [deckId], references: [id], onDelete: Cascade)
+  word     Word   @relation(fields: [wordId], references: [id], onDelete: Cascade)
+
+  @@id([deckId, wordId])
+  @@index([deckId, position])
+  @@map("deck_word")
+}
+
+model Confusable {
+  fromId String
+  toId   String
+  from   Word   @relation("confusableFrom", fields: [fromId], references: [id], onDelete: Cascade)
+  to     Word   @relation("confusableTo", fields: [toId], references: [id], onDelete: Cascade)
+
+  @@id([fromId, toId])
+  @@map("confusable")
+}
+
+model Card {
+  userId       String
+  wordId       String
+  reviews      Int       @default(0)
+  lapses       Int       @default(0)
+  ease         Float     @default(2.5)
+  intervalDays Int       @default(0)
+  dueAt        DateTime  @default(now())
+  buriedUntil  DateTime?
+  hook         String?
+  lastGrade    Grade?
+  updatedAt    DateTime  @updatedAt
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+  word Word @relation(fields: [wordId], references: [id], onDelete: Cascade)
+
+  @@id([userId, wordId])
+  @@index([userId, dueAt])
+  @@index([userId, lapses])
+  @@index([userId, intervalDays])
+  @@map("card")
+}
+
+model Review {
+  id        String   @id
+  userId    String
+  wordId    String
+  grade     Grade
+  revealed  Boolean
+  ms        Int
+  createdAt DateTime @default(now())
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+  word Word @relation(fields: [wordId], references: [id], onDelete: Cascade)
+
+  @@index([userId, createdAt])
+  @@map("review")
+}
+
+model UserSettings {
+  userId        String  @id
+  dailyGoal     Int     @default(40)
+  studyOrder    String  @default("smart")
+  sentenceFirst Boolean @default(false)
+  showRoots     Boolean @default(true)
+  keyboardHints Boolean @default(true)
+  speech        Boolean @default(false)
+  activeDeckId  String?
+  user          User    @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@map("user_settings")
 }

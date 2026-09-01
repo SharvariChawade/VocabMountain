@@ -1,0 +1,415 @@
+[
+  {
+    "term": "austere",
+    "group": 1,
+    "position": 2,
+    "senseIndex": 1,
+    "senseGloss": "plain, simple, and without decoration",
+    "partOfSpeech": "adjective",
+    "meaning": "having a plain, unadorned appearance or strict simplicity",
+    "pronunciation": "aw-STEER",
+    "root": "austeros harsh, rough, bitter",
+    "rootConfidence": "high",
+    "synonyms": [
+      "unadorned",
+      "stark",
+      "spartan",
+      "ascetic"
+    ],
+    "antonyms": [
+      "extravagant",
+      "flamboyant",
+      "gaudy"
+    ],
+    "confusableWith": [],
+    "example": "The monk lived in an austere room furnished with only a simple cot and wooden desk.",
+    "blank": "The monk lived in an ______ room furnished with only a simple cot and wooden desk.",
+    "ungroundedSynonyms": [],
+    "ungroundedAntonyms": [],
+    "needsReview": []
+  },
+  {
+    "term": "belie",
+    "group": 1,
+    "position": 3,
+    "senseIndex": 4,
+    "senseGloss": "to contradict or show to be false",
+    "partOfSpeech": "verb",
+    "meaning": "To contradict or give a false impression of something.",
+    "pronunciation": "bih-LY",
+    "root": "be- thoroughly + lie speak falsely",
+    "rootConfidence": "high",
+    "synonyms": [
+      "contradict",
+      "misrepresent",
+      "negate",
+      "refute"
+    ],
+    "antonyms": [
+      "confirm",
+      "corroborate",
+      "substantiate"
+    ],
+    "confusableWith": [],
+    "example": "Her cheerful expression belied the deep grief she carried inside.",
+    "blank": "Her cheerful expression ______ the deep grief she carried inside.",
+    "ungroundedSynonyms": [],
+    "ungroundedAntonyms": [],
+    "needsReview": []
+  },
+  {
+    "term": "capricious",
+    "group": 1,
+    "position": 4,
+    "senseIndex": 0,
+    "senseGloss": "given to sudden and unaccountable changes",
+    "partOfSpeech": "adjective",
+    "meaning": "changing mood or behavior suddenly and unpredictably",
+    "pronunciation": "kuh-PRISH-us",
+    "root": "Italian capriccio whim",
+    "rootConfidence": "medium",
+    "synonyms": [
+      "whimsical",
+      "fickle",
+      "erratic",
+      "volatile"
+    ],
+    "antonyms": [
+      "predictable",
+      "steady"
+    ],
+    "confusableWith": [],
+    "example": "The ruler's capricious decisions alienated his advisers and threw the kingdom into turmoil.",
+    "blank": "The ruler's ______ decisions alienated his advisers and threw the kingdom into turmoil.",
+    "ungroundedSynonyms": [],
+    "ungroundedAntonyms": [
+      "steady"
+    ],
+    "needsReview": [
+      "unverified antonyms: steady",
+      "root confidence medium: \"Italian capriccio whim\""
+    ]
+  },
+  {
+    "term": "cerebral",
+    "group": 1,
+    "position": 5,
+    "senseIndex": -1,
+    "senseGloss": "intellectual rather than emotional",
+    "partOfSpeech": "adjective",
+    "meaning": "intellectual and analytical rather than emotional or physical",
+    "pronunciation": "SEH-ruh-bruhl",
+    "root": "cerebrum brain",
+    "rootConfidence": "high",
+    "synonyms": [
+      "intellectual",
+      "analytical",
+      "highbrow",
+      "erudite"
+    ],
+    "antonyms": [
+      "emotional",
+      "nonintellectual"
+    ],
+    "confusableWith": [],
+    "example": "His films are demanding and cerebral, appealing more to the intellect than to raw sentiment.",
+    "blank": "His films are demanding and ______, appealing more to the intellect than to raw sentiment.",
+    "ungroundedSynonyms": [],
+    "ungroundedAntonyms": [],
+    "needsReview": [
+      "no dictionary senses — sense choice is ungrounded"
+    ]
+  },
+  {
+    "term": "disseminate",
+    "group": 1,
+    "position": 12,
+    "senseIndex": 0,
+    "senseGloss": "to spread information or ideas widely",
+    "partOfSpeech": "verb",
+    "meaning": "To scatter or spread information widely.",
+    "pronunciation": "dih-SEM-ih-nayt",
+    "root": "dis- apart + semen seed",
+    "rootConfidence": "high",
+    "synonyms": [
+      "propagate",
+      "disperse",
+      "diffuse",
+      "circulate"
+    ],
+    "antonyms": [
+      "gather",
+      "collect",
+      "garner"
+    ],
+    "confusableWith": [],
+    "example": "The agency used social media to disseminate crucial public health guidelines across the country.",
+    "blank": "The agency used social media to ______ crucial public health guidelines across the country.",
+    "ungroundedSynonyms": [],
+    "ungroundedAntonyms": [],
+    "needsReview": []
+  },
+  {
+    "term": "feasible",
+    "group": 1,
+    "position": 13,
+    "senseIndex": 0,
+    "senseGloss": "able to be done in practice",
+    "partOfSpeech": "adjective",
+    "meaning": "Capable of being done or carried out successfully in practice.",
+    "pronunciation": "FEE-zuh-buhl",
+    "root": "facere to do or make + -able",
+    "rootConfidence": "high",
+    "synonyms": [
+      "viable",
+      "practicable",
+      "workable",
+      "achievable"
+    ],
+    "antonyms": [
+      "infeasible",
+      "unfeasible",
+      "impossible"
+    ],
+    "confusableWith": [],
+    "example": "Given the strict budget and tight timeline, the committee doubted the proposal was feasible.",
+    "blank": "Given the strict budget and tight timeline, the committee doubted the proposal was ______.",
+    "ungroundedSynonyms": [],
+    "ungroundedAntonyms": [],
+    "needsReview": []
+  },
+  {
+    "term": "flout",
+    "group": 1,
+    "position": 14,
+    "senseIndex": 2,
+    "senseGloss": "openly disregard a rule or law",
+    "partOfSpeech": "verb",
+    "meaning": "Openly disregard or defy a rule, law, or convention.",
+    "pronunciation": "FLOWT",
+    "root": "Middle English flowten (to play flute, mock)",
+    "rootConfidence": "medium",
+    "synonyms": [
+      "defy",
+      "contravene",
+      "disobey",
+      "disregard"
+    ],
+    "antonyms": [
+      "obey",
+      "comply"
+    ],
+    "confusableWith": [],
+    "example": "Several major corporations continue to flout environmental regulations without facing serious penalties.",
+    "blank": "Several major corporations continue to ______ environmental regulations without facing serious penalties.",
+    "ungroundedSynonyms": [],
+    "ungroundedAntonyms": [],
+    "needsReview": [
+      "root confidence medium: \"Middle English flowten (to play flute, mock)\""
+    ]
+  },
+  {
+    "term": "humdrum",
+    "group": 1,
+    "position": 16,
+    "senseIndex": 2,
+    "senseGloss": "lacking variety, excitement, or interest",
+    "partOfSpeech": "adjective",
+    "meaning": "dull, monotonous, and lacking excitement",
+    "pronunciation": "HUM-drum",
+    "root": "hum (imitative murmur) + drum (rhyming reduplication)",
+    "rootConfidence": "medium",
+    "synonyms": [
+      "monotonous",
+      "prosaic",
+      "dull",
+      "commonplace"
+    ],
+    "antonyms": [
+      "exciting",
+      "stimulating",
+      "lively"
+    ],
+    "confusableWith": [],
+    "example": "She sought an adventurous career abroad to escape her humdrum office routine.",
+    "blank": "She sought an adventurous career abroad to escape her ______ office routine.",
+    "ungroundedSynonyms": [],
+    "ungroundedAntonyms": [],
+    "needsReview": [
+      "root confidence medium: \"hum (imitative murmur) + drum (rhyming reduplication)\""
+    ]
+  },
+  {
+    "term": "obsequious",
+    "group": 1,
+    "position": 22,
+    "senseIndex": 1,
+    "senseGloss": "excessively eager to please or obey",
+    "partOfSpeech": "adjective",
+    "meaning": "excessively eager to please or obey in a fawning way",
+    "pronunciation": "uhb-SEE-kwee-uhs",
+    "root": "ob- toward + sequi to follow",
+    "rootConfidence": "high",
+    "synonyms": [
+      "fawning",
+      "sycophantic",
+      "servile",
+      "subservient"
+    ],
+    "antonyms": [
+      "unsubmissive",
+      "sincere"
+    ],
+    "confusableWith": [],
+    "example": "The manager preferred honest feedback over the obsequious flattery of his assistant.",
+    "blank": "The manager preferred honest feedback over the ______ flattery of his assistant.",
+    "ungroundedSynonyms": [],
+    "ungroundedAntonyms": [],
+    "needsReview": []
+  },
+  {
+    "term": "quixotic",
+    "group": 1,
+    "position": 26,
+    "senseIndex": 0,
+    "senseGloss": "exceedingly idealistic and impractical",
+    "partOfSpeech": "adjective",
+    "meaning": "exceedingly idealistic, unrealistic, and impractical",
+    "pronunciation": "kwik-SOT-ik",
+    "root": "Don Quixote, literary character",
+    "rootConfidence": "high",
+    "synonyms": [
+      "impractical",
+      "chimerical",
+      "wild-eyed"
+    ],
+    "antonyms": [
+      "practical"
+    ],
+    "confusableWith": [],
+    "example": "His quixotic quest to eliminate all bureaucracy in a single week was doomed to fail.",
+    "blank": "His ______ quest to eliminate all bureaucracy in a single week was doomed to fail.",
+    "ungroundedSynonyms": [],
+    "ungroundedAntonyms": [],
+    "needsReview": []
+  },
+  {
+    "term": "taciturn",
+    "group": 1,
+    "position": 28,
+    "senseIndex": -1,
+    "senseGloss": "reserved or uncommunicative in speech",
+    "partOfSpeech": "adjective",
+    "meaning": "habitually reserved and uncommunicative in speech",
+    "pronunciation": "TASS-ih-tern",
+    "root": "tacere to be silent",
+    "rootConfidence": "high",
+    "synonyms": [
+      "reticent",
+      "tight-lipped",
+      "untalkative"
+    ],
+    "antonyms": [
+      "voluble"
+    ],
+    "confusableWith": [],
+    "example": "The taciturn clerk rarely spoke to customers, preferring to work in absolute silence.",
+    "blank": "The ______ clerk rarely spoke to customers, preferring to work in absolute silence.",
+    "ungroundedSynonyms": [],
+    "ungroundedAntonyms": [],
+    "needsReview": [
+      "no dictionary senses — sense choice is ungrounded"
+    ]
+  },
+  {
+    "term": "obviate",
+    "group": 8,
+    "position": 16,
+    "senseIndex": -1,
+    "senseGloss": "remove a need or prevent difficulty",
+    "partOfSpeech": "verb",
+    "meaning": "To remove a need or anticipate and prevent difficulties.",
+    "pronunciation": "AHB-vee-ayt",
+    "root": "ob- against, in the way of + via way",
+    "rootConfidence": "high",
+    "synonyms": [
+      "preclude",
+      "prevent",
+      "avert",
+      "eliminate"
+    ],
+    "antonyms": [
+      "necessitate",
+      "require",
+      "demand"
+    ],
+    "confusableWith": [],
+    "example": "Installing backup generators obviated the risk of catastrophic power failures during winter storms.",
+    "blank": "Installing backup generators ______ the risk of catastrophic power failures during winter storms.",
+    "ungroundedSynonyms": [],
+    "ungroundedAntonyms": [],
+    "needsReview": [
+      "no dictionary senses — sense choice is ungrounded"
+    ]
+  },
+  {
+    "term": "sanguine",
+    "group": 8,
+    "position": 24,
+    "senseIndex": 10,
+    "senseGloss": "optimistic or positive about the future",
+    "partOfSpeech": "adjective",
+    "meaning": "Optimistic and positive, especially in a difficult situation.",
+    "pronunciation": "SANG-gwin",
+    "root": "sanguis blood",
+    "rootConfidence": "high",
+    "synonyms": [
+      "optimistic",
+      "buoyant",
+      "bullish",
+      "hopeful"
+    ],
+    "antonyms": [
+      "pessimistic",
+      "gloomy",
+      "despondent"
+    ],
+    "confusableWith": [],
+    "example": "Despite the grim quarterly financial report, the chief executive remained sanguine about long-term growth.",
+    "blank": "Despite the grim quarterly financial report, the chief executive remained ______ about long-term growth.",
+    "ungroundedSynonyms": [],
+    "ungroundedAntonyms": [],
+    "needsReview": []
+  },
+  {
+    "term": "pedestrian",
+    "group": 19,
+    "position": 22,
+    "senseIndex": 3,
+    "senseGloss": "ordinary, dull, and unexceptional",
+    "partOfSpeech": "adjective",
+    "meaning": "Lacking excitement or imagination; dull and ordinary.",
+    "pronunciation": "puh-DES-tree-un",
+    "root": "ped- foot",
+    "rootConfidence": "high",
+    "synonyms": [
+      "prosaic",
+      "uninteresting",
+      "earthbound"
+    ],
+    "antonyms": [
+      "interesting",
+      "inspired"
+    ],
+    "confusableWith": [],
+    "example": "Critics dismissed the novel for its pedestrian plot and predictable characters.",
+    "blank": "Critics dismissed the novel for its ______ plot and predictable characters.",
+    "ungroundedSynonyms": [],
+    "ungroundedAntonyms": [
+      "inspired"
+    ],
+    "needsReview": [
+      "unverified antonyms: inspired"
+    ]
+  }
+]

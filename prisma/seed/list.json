@@ -1,0 +1,5377 @@
+[
+  {
+    "term": "abound",
+    "group": 1,
+    "position": 0
+  },
+  {
+    "term": "amorphous",
+    "group": 1,
+    "position": 1
+  },
+  {
+    "term": "austere",
+    "group": 1,
+    "position": 2
+  },
+  {
+    "term": "belie",
+    "group": 1,
+    "position": 3
+  },
+  {
+    "term": "capricious",
+    "group": 1,
+    "position": 4
+  },
+  {
+    "term": "cerebral",
+    "group": 1,
+    "position": 5
+  },
+  {
+    "term": "congenial",
+    "group": 1,
+    "position": 6
+  },
+  {
+    "term": "conspicuous",
+    "group": 1,
+    "position": 7
+  },
+  {
+    "term": "cursory",
+    "group": 1,
+    "position": 8
+  },
+  {
+    "term": "daunting",
+    "group": 1,
+    "position": 9
+  },
+  {
+    "term": "deify",
+    "group": 1,
+    "position": 10
+  },
+  {
+    "term": "didactic",
+    "group": 1,
+    "position": 11
+  },
+  {
+    "term": "disseminate",
+    "group": 1,
+    "position": 12
+  },
+  {
+    "term": "feasible",
+    "group": 1,
+    "position": 13
+  },
+  {
+    "term": "flout",
+    "group": 1,
+    "position": 14
+  },
+  {
+    "term": "homogeneous",
+    "group": 1,
+    "position": 15
+  },
+  {
+    "term": "humdrum",
+    "group": 1,
+    "position": 16
+  },
+  {
+    "term": "insipid",
+    "group": 1,
+    "position": 17
+  },
+  {
+    "term": "loquacious",
+    "group": 1,
+    "position": 18
+  },
+  {
+    "term": "misanthropic",
+    "group": 1,
+    "position": 19
+  },
+  {
+    "term": "misnomer",
+    "group": 1,
+    "position": 20
+  },
+  {
+    "term": "negligent",
+    "group": 1,
+    "position": 21
+  },
+  {
+    "term": "obsequious",
+    "group": 1,
+    "position": 22
+  },
+  {
+    "term": "placate",
+    "group": 1,
+    "position": 23
+  },
+  {
+    "term": "proclivity",
+    "group": 1,
+    "position": 24
+  },
+  {
+    "term": "puerile",
+    "group": 1,
+    "position": 25
+  },
+  {
+    "term": "quixotic",
+    "group": 1,
+    "position": 26
+  },
+  {
+    "term": "spendthrift",
+    "group": 1,
+    "position": 27
+  },
+  {
+    "term": "taciturn",
+    "group": 1,
+    "position": 28
+  },
+  {
+    "term": "wary",
+    "group": 1,
+    "position": 29
+  },
+  {
+    "term": "adulterate",
+    "group": 2,
+    "position": 0
+  },
+  {
+    "term": "advocate",
+    "group": 2,
+    "position": 1
+  },
+  {
+    "term": "aggrandize",
+    "group": 2,
+    "position": 2
+  },
+  {
+    "term": "alacrity",
+    "group": 2,
+    "position": 3
+  },
+  {
+    "term": "ambivalent",
+    "group": 2,
+    "position": 4
+  },
+  {
+    "term": "ameliorate",
+    "group": 2,
+    "position": 5
+  },
+  {
+    "term": "amenable",
+    "group": 2,
+    "position": 6
+  },
+  {
+    "term": "anachronistic",
+    "group": 2,
+    "position": 7
+  },
+  {
+    "term": "audacious",
+    "group": 2,
+    "position": 8
+  },
+  {
+    "term": "avaricious",
+    "group": 2,
+    "position": 9
+  },
+  {
+    "term": "banal",
+    "group": 2,
+    "position": 10
+  },
+  {
+    "term": "benign",
+    "group": 2,
+    "position": 11
+  },
+  {
+    "term": "brazen",
+    "group": 2,
+    "position": 12
+  },
+  {
+    "term": "calumny",
+    "group": 2,
+    "position": 13
+  },
+  {
+    "term": "candid",
+    "group": 2,
+    "position": 14
+  },
+  {
+    "term": "castigate",
+    "group": 2,
+    "position": 15
+  },
+  {
+    "term": "caustic",
+    "group": 2,
+    "position": 16
+  },
+  {
+    "term": "construe",
+    "group": 2,
+    "position": 17
+  },
+  {
+    "term": "contrite",
+    "group": 2,
+    "position": 18
+  },
+  {
+    "term": "convoluted",
+    "group": 2,
+    "position": 19
+  },
+  {
+    "term": "covet",
+    "group": 2,
+    "position": 20
+  },
+  {
+    "term": "craven",
+    "group": 2,
+    "position": 21
+  },
+  {
+    "term": "decorum",
+    "group": 2,
+    "position": 22
+  },
+  {
+    "term": "deft",
+    "group": 2,
+    "position": 23
+  },
+  {
+    "term": "demur",
+    "group": 2,
+    "position": 24
+  },
+  {
+    "term": "derivative",
+    "group": 2,
+    "position": 25
+  },
+  {
+    "term": "desiccate",
+    "group": 2,
+    "position": 26
+  },
+  {
+    "term": "diatribe",
+    "group": 2,
+    "position": 27
+  },
+  {
+    "term": "incredulous",
+    "group": 2,
+    "position": 28
+  },
+  {
+    "term": "ingenuous",
+    "group": 2,
+    "position": 29
+  },
+  {
+    "term": "abate",
+    "group": 3,
+    "position": 0
+  },
+  {
+    "term": "abjure",
+    "group": 3,
+    "position": 1
+  },
+  {
+    "term": "anomalous",
+    "group": 3,
+    "position": 2
+  },
+  {
+    "term": "antipathy",
+    "group": 3,
+    "position": 3
+  },
+  {
+    "term": "arcane",
+    "group": 3,
+    "position": 4
+  },
+  {
+    "term": "arduous",
+    "group": 3,
+    "position": 5
+  },
+  {
+    "term": "artless",
+    "group": 3,
+    "position": 6
+  },
+  {
+    "term": "ascetic",
+    "group": 3,
+    "position": 7
+  },
+  {
+    "term": "assuage",
+    "group": 3,
+    "position": 8
+  },
+  {
+    "term": "betray",
+    "group": 3,
+    "position": 9
+  },
+  {
+    "term": "bucolic",
+    "group": 3,
+    "position": 10
+  },
+  {
+    "term": "burgeon",
+    "group": 3,
+    "position": 11
+  },
+  {
+    "term": "cacophonous",
+    "group": 3,
+    "position": 12
+  },
+  {
+    "term": "canonize",
+    "group": 3,
+    "position": 13
+  },
+  {
+    "term": "censure",
+    "group": 3,
+    "position": 14
+  },
+  {
+    "term": "chicanery",
+    "group": 3,
+    "position": 15
+  },
+  {
+    "term": "coalesce",
+    "group": 3,
+    "position": 16
+  },
+  {
+    "term": "cogent",
+    "group": 3,
+    "position": 17
+  },
+  {
+    "term": "compelling",
+    "group": 3,
+    "position": 18
+  },
+  {
+    "term": "contend",
+    "group": 3,
+    "position": 19
+  },
+  {
+    "term": "copious",
+    "group": 3,
+    "position": 20
+  },
+  {
+    "term": "cosmopolitan",
+    "group": 3,
+    "position": 21
+  },
+  {
+    "term": "deference",
+    "group": 3,
+    "position": 22
+  },
+  {
+    "term": "desultory",
+    "group": 3,
+    "position": 23
+  },
+  {
+    "term": "diffident",
+    "group": 3,
+    "position": 24
+  },
+  {
+    "term": "dilatory",
+    "group": 3,
+    "position": 25
+  },
+  {
+    "term": "equivocate",
+    "group": 3,
+    "position": 26
+  },
+  {
+    "term": "polarize",
+    "group": 3,
+    "position": 27
+  },
+  {
+    "term": "prodigal",
+    "group": 3,
+    "position": 28
+  },
+  {
+    "term": "verbose",
+    "group": 3,
+    "position": 29
+  },
+  {
+    "term": "abstain",
+    "group": 4,
+    "position": 0
+  },
+  {
+    "term": "approbation",
+    "group": 4,
+    "position": 1
+  },
+  {
+    "term": "cherish",
+    "group": 4,
+    "position": 2
+  },
+  {
+    "term": "corroborate",
+    "group": 4,
+    "position": 3
+  },
+  {
+    "term": "disparate",
+    "group": 4,
+    "position": 4
+  },
+  {
+    "term": "emulate",
+    "group": 4,
+    "position": 5
+  },
+  {
+    "term": "enervate",
+    "group": 4,
+    "position": 6
+  },
+  {
+    "term": "ephemeral",
+    "group": 4,
+    "position": 7
+  },
+  {
+    "term": "fervid",
+    "group": 4,
+    "position": 8
+  },
+  {
+    "term": "garrulous",
+    "group": 4,
+    "position": 9
+  },
+  {
+    "term": "incendiary",
+    "group": 4,
+    "position": 10
+  },
+  {
+    "term": "inimical",
+    "group": 4,
+    "position": 11
+  },
+  {
+    "term": "intimate",
+    "group": 4,
+    "position": 12
+  },
+  {
+    "term": "invigorate",
+    "group": 4,
+    "position": 13
+  },
+  {
+    "term": "mitigate",
+    "group": 4,
+    "position": 14
+  },
+  {
+    "term": "obsolete",
+    "group": 4,
+    "position": 15
+  },
+  {
+    "term": "opaque",
+    "group": 4,
+    "position": 16
+  },
+  {
+    "term": "paradigmatic",
+    "group": 4,
+    "position": 17
+  },
+  {
+    "term": "pedantic",
+    "group": 4,
+    "position": 18
+  },
+  {
+    "term": "placid",
+    "group": 4,
+    "position": 19
+  },
+  {
+    "term": "polemical",
+    "group": 4,
+    "position": 20
+  },
+  {
+    "term": "precipitate",
+    "group": 4,
+    "position": 21
+  },
+  {
+    "term": "profundity",
+    "group": 4,
+    "position": 22
+  },
+  {
+    "term": "prophetic",
+    "group": 4,
+    "position": 23
+  },
+  {
+    "term": "prudent",
+    "group": 4,
+    "position": 24
+  },
+  {
+    "term": "punctilious",
+    "group": 4,
+    "position": 25
+  },
+  {
+    "term": "recondite",
+    "group": 4,
+    "position": 26
+  },
+  {
+    "term": "scrupulous",
+    "group": 4,
+    "position": 27
+  },
+  {
+    "term": "tranquil",
+    "group": 4,
+    "position": 28
+  },
+  {
+    "term": "vacillate",
+    "group": 4,
+    "position": 29
+  },
+  {
+    "term": "aloof",
+    "group": 5,
+    "position": 0
+  },
+  {
+    "term": "clangor",
+    "group": 5,
+    "position": 1
+  },
+  {
+    "term": "conventional",
+    "group": 5,
+    "position": 2
+  },
+  {
+    "term": "debunk",
+    "group": 5,
+    "position": 3
+  },
+  {
+    "term": "diminutive",
+    "group": 5,
+    "position": 4
+  },
+  {
+    "term": "discernible",
+    "group": 5,
+    "position": 5
+  },
+  {
+    "term": "enigmatic",
+    "group": 5,
+    "position": 6
+  },
+  {
+    "term": "estranged",
+    "group": 5,
+    "position": 7
+  },
+  {
+    "term": "extravagant",
+    "group": 5,
+    "position": 8
+  },
+  {
+    "term": "fanciful",
+    "group": 5,
+    "position": 9
+  },
+  {
+    "term": "frivolous",
+    "group": 5,
+    "position": 10
+  },
+  {
+    "term": "heterogeneous",
+    "group": 5,
+    "position": 11
+  },
+  {
+    "term": "imperious",
+    "group": 5,
+    "position": 12
+  },
+  {
+    "term": "impertinent",
+    "group": 5,
+    "position": 13
+  },
+  {
+    "term": "invasive",
+    "group": 5,
+    "position": 14
+  },
+  {
+    "term": "irresolute",
+    "group": 5,
+    "position": 15
+  },
+  {
+    "term": "laudable",
+    "group": 5,
+    "position": 16
+  },
+  {
+    "term": "lax",
+    "group": 5,
+    "position": 17
+  },
+  {
+    "term": "marginalize",
+    "group": 5,
+    "position": 18
+  },
+  {
+    "term": "panache",
+    "group": 5,
+    "position": 19
+  },
+  {
+    "term": "plodding",
+    "group": 5,
+    "position": 20
+  },
+  {
+    "term": "prosaic",
+    "group": 5,
+    "position": 21
+  },
+  {
+    "term": "remedial",
+    "group": 5,
+    "position": 22
+  },
+  {
+    "term": "restive",
+    "group": 5,
+    "position": 23
+  },
+  {
+    "term": "sporadic",
+    "group": 5,
+    "position": 24
+  },
+  {
+    "term": "stigmatize",
+    "group": 5,
+    "position": 25
+  },
+  {
+    "term": "undermine",
+    "group": 5,
+    "position": 26
+  },
+  {
+    "term": "utterly",
+    "group": 5,
+    "position": 27
+  },
+  {
+    "term": "weary",
+    "group": 5,
+    "position": 28
+  },
+  {
+    "term": "zealous",
+    "group": 5,
+    "position": 29
+  },
+  {
+    "term": "admonish",
+    "group": 6,
+    "position": 0
+  },
+  {
+    "term": "aesthetic",
+    "group": 6,
+    "position": 1
+  },
+  {
+    "term": "affectation",
+    "group": 6,
+    "position": 2
+  },
+  {
+    "term": "alleviate",
+    "group": 6,
+    "position": 3
+  },
+  {
+    "term": "analogous",
+    "group": 6,
+    "position": 4
+  },
+  {
+    "term": "bolster",
+    "group": 6,
+    "position": 5
+  },
+  {
+    "term": "chauvinistic",
+    "group": 6,
+    "position": 6
+  },
+  {
+    "term": "connoisseur",
+    "group": 6,
+    "position": 7
+  },
+  {
+    "term": "dissemble",
+    "group": 6,
+    "position": 8
+  },
+  {
+    "term": "dogged",
+    "group": 6,
+    "position": 9
+  },
+  {
+    "term": "dupe",
+    "group": 6,
+    "position": 10
+  },
+  {
+    "term": "empirical",
+    "group": 6,
+    "position": 11
+  },
+  {
+    "term": "engender",
+    "group": 6,
+    "position": 12
+  },
+  {
+    "term": "entitled",
+    "group": 6,
+    "position": 13
+  },
+  {
+    "term": "pertinacious",
+    "group": 6,
+    "position": 14
+  },
+  {
+    "term": "presumptuous",
+    "group": 6,
+    "position": 15
+  },
+  {
+    "term": "probity",
+    "group": 6,
+    "position": 16
+  },
+  {
+    "term": "proliferate",
+    "group": 6,
+    "position": 17
+  },
+  {
+    "term": "specious",
+    "group": 6,
+    "position": 18
+  },
+  {
+    "term": "spurious",
+    "group": 6,
+    "position": 19
+  },
+  {
+    "term": "subjective",
+    "group": 6,
+    "position": 20
+  },
+  {
+    "term": "subvert",
+    "group": 6,
+    "position": 21
+  },
+  {
+    "term": "timorous",
+    "group": 6,
+    "position": 22
+  },
+  {
+    "term": "tortuous",
+    "group": 6,
+    "position": 23
+  },
+  {
+    "term": "tractable",
+    "group": 6,
+    "position": 24
+  },
+  {
+    "term": "transient",
+    "group": 6,
+    "position": 25
+  },
+  {
+    "term": "ubiquitous",
+    "group": 6,
+    "position": 26
+  },
+  {
+    "term": "underscore",
+    "group": 6,
+    "position": 27
+  },
+  {
+    "term": "venal",
+    "group": 6,
+    "position": 28
+  },
+  {
+    "term": "venerate",
+    "group": 6,
+    "position": 29
+  },
+  {
+    "term": "appease",
+    "group": 7,
+    "position": 0
+  },
+  {
+    "term": "arbitrary",
+    "group": 7,
+    "position": 1
+  },
+  {
+    "term": "archaic",
+    "group": 7,
+    "position": 2
+  },
+  {
+    "term": "clamorous",
+    "group": 7,
+    "position": 3
+  },
+  {
+    "term": "dearth",
+    "group": 7,
+    "position": 4
+  },
+  {
+    "term": "explicable",
+    "group": 7,
+    "position": 5
+  },
+  {
+    "term": "hyperbole",
+    "group": 7,
+    "position": 6
+  },
+  {
+    "term": "immutable",
+    "group": 7,
+    "position": 7
+  },
+  {
+    "term": "indefatigable",
+    "group": 7,
+    "position": 8
+  },
+  {
+    "term": "indolent",
+    "group": 7,
+    "position": 9
+  },
+  {
+    "term": "insular",
+    "group": 7,
+    "position": 10
+  },
+  {
+    "term": "intransigent",
+    "group": 7,
+    "position": 11
+  },
+  {
+    "term": "intrepid",
+    "group": 7,
+    "position": 12
+  },
+  {
+    "term": "irreverent",
+    "group": 7,
+    "position": 13
+  },
+  {
+    "term": "loathe",
+    "group": 7,
+    "position": 14
+  },
+  {
+    "term": "malign",
+    "group": 7,
+    "position": 15
+  },
+  {
+    "term": "malleable",
+    "group": 7,
+    "position": 16
+  },
+  {
+    "term": "neophyte",
+    "group": 7,
+    "position": 17
+  },
+  {
+    "term": "plastic",
+    "group": 7,
+    "position": 18
+  },
+  {
+    "term": "platitude",
+    "group": 7,
+    "position": 19
+  },
+  {
+    "term": "prescient",
+    "group": 7,
+    "position": 20
+  },
+  {
+    "term": "pristine",
+    "group": 7,
+    "position": 21
+  },
+  {
+    "term": "reproach",
+    "group": 7,
+    "position": 22
+  },
+  {
+    "term": "robust",
+    "group": 7,
+    "position": 23
+  },
+  {
+    "term": "salubrious",
+    "group": 7,
+    "position": 24
+  },
+  {
+    "term": "sanction",
+    "group": 7,
+    "position": 25
+  },
+  {
+    "term": "sedulous",
+    "group": 7,
+    "position": 26
+  },
+  {
+    "term": "soporific",
+    "group": 7,
+    "position": 27
+  },
+  {
+    "term": "stern",
+    "group": 7,
+    "position": 28
+  },
+  {
+    "term": "tendentious",
+    "group": 7,
+    "position": 29
+  },
+  {
+    "term": "accentuate",
+    "group": 8,
+    "position": 0
+  },
+  {
+    "term": "conjectural",
+    "group": 8,
+    "position": 1
+  },
+  {
+    "term": "convivial",
+    "group": 8,
+    "position": 2
+  },
+  {
+    "term": "decadent",
+    "group": 8,
+    "position": 3
+  },
+  {
+    "term": "egregious",
+    "group": 8,
+    "position": 4
+  },
+  {
+    "term": "evanescent",
+    "group": 8,
+    "position": 5
+  },
+  {
+    "term": "flamboyant",
+    "group": 8,
+    "position": 6
+  },
+  {
+    "term": "forestall",
+    "group": 8,
+    "position": 7
+  },
+  {
+    "term": "gainsay",
+    "group": 8,
+    "position": 8
+  },
+  {
+    "term": "galvanize",
+    "group": 8,
+    "position": 9
+  },
+  {
+    "term": "indiscriminate",
+    "group": 8,
+    "position": 10
+  },
+  {
+    "term": "innocuous",
+    "group": 8,
+    "position": 11
+  },
+  {
+    "term": "momentary",
+    "group": 8,
+    "position": 12
+  },
+  {
+    "term": "mundane",
+    "group": 8,
+    "position": 13
+  },
+  {
+    "term": "nettlesome",
+    "group": 8,
+    "position": 14
+  },
+  {
+    "term": "nullify",
+    "group": 8,
+    "position": 15
+  },
+  {
+    "term": "obviate",
+    "group": 8,
+    "position": 16
+  },
+  {
+    "term": "omnipresent",
+    "group": 8,
+    "position": 17
+  },
+  {
+    "term": "oust",
+    "group": 8,
+    "position": 18
+  },
+  {
+    "term": "palpable",
+    "group": 8,
+    "position": 19
+  },
+  {
+    "term": "perfidy",
+    "group": 8,
+    "position": 20
+  },
+  {
+    "term": "profuse",
+    "group": 8,
+    "position": 21
+  },
+  {
+    "term": "pugnacious",
+    "group": 8,
+    "position": 22
+  },
+  {
+    "term": "sagacious",
+    "group": 8,
+    "position": 23
+  },
+  {
+    "term": "sanguine",
+    "group": 8,
+    "position": 24
+  },
+  {
+    "term": "scant",
+    "group": 8,
+    "position": 25
+  },
+  {
+    "term": "skullduggery",
+    "group": 8,
+    "position": 26
+  },
+  {
+    "term": "trivial",
+    "group": 8,
+    "position": 27
+  },
+  {
+    "term": "utilitarian",
+    "group": 8,
+    "position": 28
+  },
+  {
+    "term": "vapid",
+    "group": 8,
+    "position": 29
+  },
+  {
+    "term": "boorish",
+    "group": 9,
+    "position": 0
+  },
+  {
+    "term": "brook",
+    "group": 9,
+    "position": 1
+  },
+  {
+    "term": "circumspect",
+    "group": 9,
+    "position": 2
+  },
+  {
+    "term": "comity",
+    "group": 9,
+    "position": 3
+  },
+  {
+    "term": "commensurate",
+    "group": 9,
+    "position": 4
+  },
+  {
+    "term": "cordial",
+    "group": 9,
+    "position": 5
+  },
+  {
+    "term": "deleterious",
+    "group": 9,
+    "position": 6
+  },
+  {
+    "term": "dichotomy",
+    "group": 9,
+    "position": 7
+  },
+  {
+    "term": "edify",
+    "group": 9,
+    "position": 8
+  },
+  {
+    "term": "elicit",
+    "group": 9,
+    "position": 9
+  },
+  {
+    "term": "erudite",
+    "group": 9,
+    "position": 10
+  },
+  {
+    "term": "fecund",
+    "group": 9,
+    "position": 11
+  },
+  {
+    "term": "feeble",
+    "group": 9,
+    "position": 12
+  },
+  {
+    "term": "felicitous",
+    "group": 9,
+    "position": 13
+  },
+  {
+    "term": "forbear",
+    "group": 9,
+    "position": 14
+  },
+  {
+    "term": "haphazard",
+    "group": 9,
+    "position": 15
+  },
+  {
+    "term": "hodgepodge",
+    "group": 9,
+    "position": 16
+  },
+  {
+    "term": "impede",
+    "group": 9,
+    "position": 17
+  },
+  {
+    "term": "impetuous",
+    "group": 9,
+    "position": 18
+  },
+  {
+    "term": "irascible",
+    "group": 9,
+    "position": 19
+  },
+  {
+    "term": "mercenary",
+    "group": 9,
+    "position": 20
+  },
+  {
+    "term": "meticulous",
+    "group": 9,
+    "position": 21
+  },
+  {
+    "term": "mordant",
+    "group": 9,
+    "position": 22
+  },
+  {
+    "term": "outstrip",
+    "group": 9,
+    "position": 23
+  },
+  {
+    "term": "precarious",
+    "group": 9,
+    "position": 24
+  },
+  {
+    "term": "quirky",
+    "group": 9,
+    "position": 25
+  },
+  {
+    "term": "repudiate",
+    "group": 9,
+    "position": 26
+  },
+  {
+    "term": "tact",
+    "group": 9,
+    "position": 27
+  },
+  {
+    "term": "trifling",
+    "group": 9,
+    "position": 28
+  },
+  {
+    "term": "turbulent",
+    "group": 9,
+    "position": 29
+  },
+  {
+    "term": "acumen",
+    "group": 10,
+    "position": 0
+  },
+  {
+    "term": "antithesis",
+    "group": 10,
+    "position": 1
+  },
+  {
+    "term": "ascribe",
+    "group": 10,
+    "position": 2
+  },
+  {
+    "term": "befuddled",
+    "group": 10,
+    "position": 3
+  },
+  {
+    "term": "eschew",
+    "group": 10,
+    "position": 4
+  },
+  {
+    "term": "esoteric",
+    "group": 10,
+    "position": 5
+  },
+  {
+    "term": "evasive",
+    "group": 10,
+    "position": 6
+  },
+  {
+    "term": "exculpate",
+    "group": 10,
+    "position": 7
+  },
+  {
+    "term": "expedite",
+    "group": 10,
+    "position": 8
+  },
+  {
+    "term": "fastidious",
+    "group": 10,
+    "position": 9
+  },
+  {
+    "term": "feign",
+    "group": 10,
+    "position": 10
+  },
+  {
+    "term": "furtive",
+    "group": 10,
+    "position": 11
+  },
+  {
+    "term": "hamper",
+    "group": 10,
+    "position": 12
+  },
+  {
+    "term": "indispensable",
+    "group": 10,
+    "position": 13
+  },
+  {
+    "term": "lament",
+    "group": 10,
+    "position": 14
+  },
+  {
+    "term": "myopic",
+    "group": 10,
+    "position": 15
+  },
+  {
+    "term": "nonchalant",
+    "group": 10,
+    "position": 16
+  },
+  {
+    "term": "partial",
+    "group": 10,
+    "position": 17
+  },
+  {
+    "term": "pensive",
+    "group": 10,
+    "position": 18
+  },
+  {
+    "term": "portend",
+    "group": 10,
+    "position": 19
+  },
+  {
+    "term": "provincial",
+    "group": 10,
+    "position": 20
+  },
+  {
+    "term": "rudimentary",
+    "group": 10,
+    "position": 21
+  },
+  {
+    "term": "salutary",
+    "group": 10,
+    "position": 22
+  },
+  {
+    "term": "sever",
+    "group": 10,
+    "position": 23
+  },
+  {
+    "term": "slight",
+    "group": 10,
+    "position": 24
+  },
+  {
+    "term": "somnolent",
+    "group": 10,
+    "position": 25
+  },
+  {
+    "term": "stoic",
+    "group": 10,
+    "position": 26
+  },
+  {
+    "term": "supersede",
+    "group": 10,
+    "position": 27
+  },
+  {
+    "term": "tout",
+    "group": 10,
+    "position": 28
+  },
+  {
+    "term": "wane",
+    "group": 10,
+    "position": 29
+  },
+  {
+    "term": "abhor",
+    "group": 11,
+    "position": 0
+  },
+  {
+    "term": "boisterous",
+    "group": 11,
+    "position": 1
+  },
+  {
+    "term": "chivalrous",
+    "group": 11,
+    "position": 2
+  },
+  {
+    "term": "churlish",
+    "group": 11,
+    "position": 3
+  },
+  {
+    "term": "clandestine",
+    "group": 11,
+    "position": 4
+  },
+  {
+    "term": "complacent",
+    "group": 11,
+    "position": 5
+  },
+  {
+    "term": "cumbersome",
+    "group": 11,
+    "position": 6
+  },
+  {
+    "term": "debilitating",
+    "group": 11,
+    "position": 7
+  },
+  {
+    "term": "deliberate",
+    "group": 11,
+    "position": 8
+  },
+  {
+    "term": "droll",
+    "group": 11,
+    "position": 9
+  },
+  {
+    "term": "eccentric",
+    "group": 11,
+    "position": 10
+  },
+  {
+    "term": "fractious",
+    "group": 11,
+    "position": 11
+  },
+  {
+    "term": "limpid",
+    "group": 11,
+    "position": 12
+  },
+  {
+    "term": "mawkish",
+    "group": 11,
+    "position": 13
+  },
+  {
+    "term": "obeisance",
+    "group": 11,
+    "position": 14
+  },
+  {
+    "term": "ostentatious",
+    "group": 11,
+    "position": 15
+  },
+  {
+    "term": "panacea",
+    "group": 11,
+    "position": 16
+  },
+  {
+    "term": "perfunctory",
+    "group": 11,
+    "position": 17
+  },
+  {
+    "term": "perilous",
+    "group": 11,
+    "position": 18
+  },
+  {
+    "term": "pervasive",
+    "group": 11,
+    "position": 19
+  },
+  {
+    "term": "preclude",
+    "group": 11,
+    "position": 20
+  },
+  {
+    "term": "predilection",
+    "group": 11,
+    "position": 21
+  },
+  {
+    "term": "rapacious",
+    "group": 11,
+    "position": 22
+  },
+  {
+    "term": "relish",
+    "group": 11,
+    "position": 23
+  },
+  {
+    "term": "satirical",
+    "group": 11,
+    "position": 24
+  },
+  {
+    "term": "sham",
+    "group": 11,
+    "position": 25
+  },
+  {
+    "term": "skirt",
+    "group": 11,
+    "position": 26
+  },
+  {
+    "term": "sluggish",
+    "group": 11,
+    "position": 27
+  },
+  {
+    "term": "spartan",
+    "group": 11,
+    "position": 28
+  },
+  {
+    "term": "truculent",
+    "group": 11,
+    "position": 29
+  },
+  {
+    "term": "acrimonious",
+    "group": 12,
+    "position": 0
+  },
+  {
+    "term": "belligerent",
+    "group": 12,
+    "position": 1
+  },
+  {
+    "term": "beneficent",
+    "group": 12,
+    "position": 2
+  },
+  {
+    "term": "canny",
+    "group": 12,
+    "position": 3
+  },
+  {
+    "term": "cavalier",
+    "group": 12,
+    "position": 4
+  },
+  {
+    "term": "distressed",
+    "group": 12,
+    "position": 5
+  },
+  {
+    "term": "dwindling",
+    "group": 12,
+    "position": 6
+  },
+  {
+    "term": "eclipse",
+    "group": 12,
+    "position": 7
+  },
+  {
+    "term": "encyclopedic",
+    "group": 12,
+    "position": 8
+  },
+  {
+    "term": "exacerbate",
+    "group": 12,
+    "position": 9
+  },
+  {
+    "term": "exasperated",
+    "group": 12,
+    "position": 10
+  },
+  {
+    "term": "fungible",
+    "group": 12,
+    "position": 11
+  },
+  {
+    "term": "hackneyed",
+    "group": 12,
+    "position": 12
+  },
+  {
+    "term": "incongruous",
+    "group": 12,
+    "position": 13
+  },
+  {
+    "term": "interchangeable",
+    "group": 12,
+    "position": 14
+  },
+  {
+    "term": "laconic",
+    "group": 12,
+    "position": 15
+  },
+  {
+    "term": "lucrative",
+    "group": 12,
+    "position": 16
+  },
+  {
+    "term": "magisterial",
+    "group": 12,
+    "position": 17
+  },
+  {
+    "term": "onerous",
+    "group": 12,
+    "position": 18
+  },
+  {
+    "term": "opprobrium",
+    "group": 12,
+    "position": 19
+  },
+  {
+    "term": "parsimonious",
+    "group": 12,
+    "position": 20
+  },
+  {
+    "term": "peripheral",
+    "group": 12,
+    "position": 21
+  },
+  {
+    "term": "provocative",
+    "group": 12,
+    "position": 22
+  },
+  {
+    "term": "renounce",
+    "group": 12,
+    "position": 23
+  },
+  {
+    "term": "tempestuous",
+    "group": 12,
+    "position": 24
+  },
+  {
+    "term": "tenable",
+    "group": 12,
+    "position": 25
+  },
+  {
+    "term": "transgression",
+    "group": 12,
+    "position": 26
+  },
+  {
+    "term": "urbane",
+    "group": 12,
+    "position": 27
+  },
+  {
+    "term": "verisimilitude",
+    "group": 12,
+    "position": 28
+  },
+  {
+    "term": "vitiate",
+    "group": 12,
+    "position": 29
+  },
+  {
+    "term": "affinity",
+    "group": 13,
+    "position": 0
+  },
+  {
+    "term": "altruistic",
+    "group": 13,
+    "position": 1
+  },
+  {
+    "term": "baroque",
+    "group": 13,
+    "position": 2
+  },
+  {
+    "term": "byzantine",
+    "group": 13,
+    "position": 3
+  },
+  {
+    "term": "compromise",
+    "group": 13,
+    "position": 4
+  },
+  {
+    "term": "conciliatory",
+    "group": 13,
+    "position": 5
+  },
+  {
+    "term": "countenance",
+    "group": 13,
+    "position": 6
+  },
+  {
+    "term": "covert",
+    "group": 13,
+    "position": 7
+  },
+  {
+    "term": "credible",
+    "group": 13,
+    "position": 8
+  },
+  {
+    "term": "diffuse",
+    "group": 13,
+    "position": 9
+  },
+  {
+    "term": "documentary",
+    "group": 13,
+    "position": 10
+  },
+  {
+    "term": "exhaustive",
+    "group": 13,
+    "position": 11
+  },
+  {
+    "term": "exhilarating",
+    "group": 13,
+    "position": 12
+  },
+  {
+    "term": "extraneous",
+    "group": 13,
+    "position": 13
+  },
+  {
+    "term": "fervor",
+    "group": 13,
+    "position": 14
+  },
+  {
+    "term": "futile",
+    "group": 13,
+    "position": 15
+  },
+  {
+    "term": "illusory",
+    "group": 13,
+    "position": 16
+  },
+  {
+    "term": "invidious",
+    "group": 13,
+    "position": 17
+  },
+  {
+    "term": "lethargic",
+    "group": 13,
+    "position": 18
+  },
+  {
+    "term": "metaphorical",
+    "group": 13,
+    "position": 19
+  },
+  {
+    "term": "mimic",
+    "group": 13,
+    "position": 20
+  },
+  {
+    "term": "numinous",
+    "group": 13,
+    "position": 21
+  },
+  {
+    "term": "obscure",
+    "group": 13,
+    "position": 22
+  },
+  {
+    "term": "overt",
+    "group": 13,
+    "position": 23
+  },
+  {
+    "term": "pellucid",
+    "group": 13,
+    "position": 24
+  },
+  {
+    "term": "perpetuate",
+    "group": 13,
+    "position": 25
+  },
+  {
+    "term": "rational",
+    "group": 13,
+    "position": 26
+  },
+  {
+    "term": "scathing",
+    "group": 13,
+    "position": 27
+  },
+  {
+    "term": "subtle",
+    "group": 13,
+    "position": 28
+  },
+  {
+    "term": "superficial",
+    "group": 13,
+    "position": 29
+  },
+  {
+    "term": "acquiesce",
+    "group": 14,
+    "position": 0
+  },
+  {
+    "term": "adroit",
+    "group": 14,
+    "position": 1
+  },
+  {
+    "term": "amend",
+    "group": 14,
+    "position": 2
+  },
+  {
+    "term": "animus",
+    "group": 14,
+    "position": 3
+  },
+  {
+    "term": "apologist",
+    "group": 14,
+    "position": 4
+  },
+  {
+    "term": "astringent",
+    "group": 14,
+    "position": 5
+  },
+  {
+    "term": "collaborate",
+    "group": 14,
+    "position": 6
+  },
+  {
+    "term": "competent",
+    "group": 14,
+    "position": 7
+  },
+  {
+    "term": "correlate",
+    "group": 14,
+    "position": 8
+  },
+  {
+    "term": "deride",
+    "group": 14,
+    "position": 9
+  },
+  {
+    "term": "dictate",
+    "group": 14,
+    "position": 10
+  },
+  {
+    "term": "discreet",
+    "group": 14,
+    "position": 11
+  },
+  {
+    "term": "divorced",
+    "group": 14,
+    "position": 12
+  },
+  {
+    "term": "elitist",
+    "group": 14,
+    "position": 13
+  },
+  {
+    "term": "exacting",
+    "group": 14,
+    "position": 14
+  },
+  {
+    "term": "flummoxed",
+    "group": 14,
+    "position": 15
+  },
+  {
+    "term": "fruitful",
+    "group": 14,
+    "position": 16
+  },
+  {
+    "term": "inborn",
+    "group": 14,
+    "position": 17
+  },
+  {
+    "term": "polymath",
+    "group": 14,
+    "position": 18
+  },
+  {
+    "term": "reticent",
+    "group": 14,
+    "position": 19
+  },
+  {
+    "term": "stringent",
+    "group": 14,
+    "position": 20
+  },
+  {
+    "term": "subservient",
+    "group": 14,
+    "position": 21
+  },
+  {
+    "term": "surreptitious",
+    "group": 14,
+    "position": 22
+  },
+  {
+    "term": "tantalizing",
+    "group": 14,
+    "position": 23
+  },
+  {
+    "term": "tantamount",
+    "group": 14,
+    "position": 24
+  },
+  {
+    "term": "torpor",
+    "group": 14,
+    "position": 25
+  },
+  {
+    "term": "trenchant",
+    "group": 14,
+    "position": 26
+  },
+  {
+    "term": "umbrage",
+    "group": 14,
+    "position": 27
+  },
+  {
+    "term": "versatile",
+    "group": 14,
+    "position": 28
+  },
+  {
+    "term": "wayward",
+    "group": 14,
+    "position": 29
+  },
+  {
+    "term": "alienate",
+    "group": 15,
+    "position": 0
+  },
+  {
+    "term": "apathy",
+    "group": 15,
+    "position": 1
+  },
+  {
+    "term": "apropos",
+    "group": 15,
+    "position": 2
+  },
+  {
+    "term": "apt",
+    "group": 15,
+    "position": 3
+  },
+  {
+    "term": "cloak",
+    "group": 15,
+    "position": 4
+  },
+  {
+    "term": "consensus",
+    "group": 15,
+    "position": 5
+  },
+  {
+    "term": "distort",
+    "group": 15,
+    "position": 6
+  },
+  {
+    "term": "divergent",
+    "group": 15,
+    "position": 7
+  },
+  {
+    "term": "elated",
+    "group": 15,
+    "position": 8
+  },
+  {
+    "term": "enchant",
+    "group": 15,
+    "position": 9
+  },
+  {
+    "term": "entrenched",
+    "group": 15,
+    "position": 10
+  },
+  {
+    "term": "exotic",
+    "group": 15,
+    "position": 11
+  },
+  {
+    "term": "exploitative",
+    "group": 15,
+    "position": 12
+  },
+  {
+    "term": "foreseeable",
+    "group": 15,
+    "position": 13
+  },
+  {
+    "term": "forsake",
+    "group": 15,
+    "position": 14
+  },
+  {
+    "term": "gratify",
+    "group": 15,
+    "position": 15
+  },
+  {
+    "term": "heed",
+    "group": 15,
+    "position": 16
+  },
+  {
+    "term": "judicious",
+    "group": 15,
+    "position": 17
+  },
+  {
+    "term": "lucid",
+    "group": 15,
+    "position": 18
+  },
+  {
+    "term": "pertinent",
+    "group": 15,
+    "position": 19
+  },
+  {
+    "term": "propriety",
+    "group": 15,
+    "position": 20
+  },
+  {
+    "term": "scintillating",
+    "group": 15,
+    "position": 21
+  },
+  {
+    "term": "sensational",
+    "group": 15,
+    "position": 22
+  },
+  {
+    "term": "sophisticated",
+    "group": 15,
+    "position": 23
+  },
+  {
+    "term": "strife",
+    "group": 15,
+    "position": 24
+  },
+  {
+    "term": "understated",
+    "group": 15,
+    "position": 25
+  },
+  {
+    "term": "unscrupulous",
+    "group": 15,
+    "position": 26
+  },
+  {
+    "term": "veracity",
+    "group": 15,
+    "position": 27
+  },
+  {
+    "term": "virulent",
+    "group": 15,
+    "position": 28
+  },
+  {
+    "term": "volatile",
+    "group": 15,
+    "position": 29
+  },
+  {
+    "term": "antedate",
+    "group": 16,
+    "position": 0
+  },
+  {
+    "term": "banish",
+    "group": 16,
+    "position": 1
+  },
+  {
+    "term": "bridle",
+    "group": 16,
+    "position": 2
+  },
+  {
+    "term": "comply",
+    "group": 16,
+    "position": 3
+  },
+  {
+    "term": "crestfallen",
+    "group": 16,
+    "position": 4
+  },
+  {
+    "term": "curtail",
+    "group": 16,
+    "position": 5
+  },
+  {
+    "term": "elucidate",
+    "group": 16,
+    "position": 6
+  },
+  {
+    "term": "evade",
+    "group": 16,
+    "position": 7
+  },
+  {
+    "term": "feckless",
+    "group": 16,
+    "position": 8
+  },
+  {
+    "term": "fester",
+    "group": 16,
+    "position": 9
+  },
+  {
+    "term": "iconoclastic",
+    "group": 16,
+    "position": 10
+  },
+  {
+    "term": "immure",
+    "group": 16,
+    "position": 11
+  },
+  {
+    "term": "improvise",
+    "group": 16,
+    "position": 12
+  },
+  {
+    "term": "inhibit",
+    "group": 16,
+    "position": 13
+  },
+  {
+    "term": "inscrutable",
+    "group": 16,
+    "position": 14
+  },
+  {
+    "term": "lionize",
+    "group": 16,
+    "position": 15
+  },
+  {
+    "term": "monotonous",
+    "group": 16,
+    "position": 16
+  },
+  {
+    "term": "peculiar",
+    "group": 16,
+    "position": 17
+  },
+  {
+    "term": "premeditate",
+    "group": 16,
+    "position": 18
+  },
+  {
+    "term": "profligate",
+    "group": 16,
+    "position": 19
+  },
+  {
+    "term": "reconcile",
+    "group": 16,
+    "position": 20
+  },
+  {
+    "term": "refine",
+    "group": 16,
+    "position": 21
+  },
+  {
+    "term": "relinquish",
+    "group": 16,
+    "position": 22
+  },
+  {
+    "term": "ruminate",
+    "group": 16,
+    "position": 23
+  },
+  {
+    "term": "skittish",
+    "group": 16,
+    "position": 24
+  },
+  {
+    "term": "superfluous",
+    "group": 16,
+    "position": 25
+  },
+  {
+    "term": "synoptic",
+    "group": 16,
+    "position": 26
+  },
+  {
+    "term": "thorough",
+    "group": 16,
+    "position": 27
+  },
+  {
+    "term": "visionary",
+    "group": 16,
+    "position": 28
+  },
+  {
+    "term": "vociferous",
+    "group": 16,
+    "position": 29
+  },
+  {
+    "term": "acclaim",
+    "group": 17,
+    "position": 0
+  },
+  {
+    "term": "ascertain",
+    "group": 17,
+    "position": 1
+  },
+  {
+    "term": "assertive",
+    "group": 17,
+    "position": 2
+  },
+  {
+    "term": "bogus",
+    "group": 17,
+    "position": 3
+  },
+  {
+    "term": "cataclysmic",
+    "group": 17,
+    "position": 4
+  },
+  {
+    "term": "circumscribe",
+    "group": 17,
+    "position": 5
+  },
+  {
+    "term": "complementary",
+    "group": 17,
+    "position": 6
+  },
+  {
+    "term": "contentious",
+    "group": 17,
+    "position": 7
+  },
+  {
+    "term": "disingenuous",
+    "group": 17,
+    "position": 8
+  },
+  {
+    "term": "divulge",
+    "group": 17,
+    "position": 9
+  },
+  {
+    "term": "dogmatic",
+    "group": 17,
+    "position": 10
+  },
+  {
+    "term": "fallacious",
+    "group": 17,
+    "position": 11
+  },
+  {
+    "term": "foolhardy",
+    "group": 17,
+    "position": 12
+  },
+  {
+    "term": "hinder",
+    "group": 17,
+    "position": 13
+  },
+  {
+    "term": "impair",
+    "group": 17,
+    "position": 14
+  },
+  {
+    "term": "impugn",
+    "group": 17,
+    "position": 15
+  },
+  {
+    "term": "incessant",
+    "group": 17,
+    "position": 16
+  },
+  {
+    "term": "inclined",
+    "group": 17,
+    "position": 17
+  },
+  {
+    "term": "inveterate",
+    "group": 17,
+    "position": 18
+  },
+  {
+    "term": "miserly",
+    "group": 17,
+    "position": 19
+  },
+  {
+    "term": "patent",
+    "group": 17,
+    "position": 20
+  },
+  {
+    "term": "petulant",
+    "group": 17,
+    "position": 21
+  },
+  {
+    "term": "pithy",
+    "group": 17,
+    "position": 22
+  },
+  {
+    "term": "pliant",
+    "group": 17,
+    "position": 23
+  },
+  {
+    "term": "sanctimonious",
+    "group": 17,
+    "position": 24
+  },
+  {
+    "term": "sound",
+    "group": 17,
+    "position": 25
+  },
+  {
+    "term": "tarnish",
+    "group": 17,
+    "position": 26
+  },
+  {
+    "term": "tepid",
+    "group": 17,
+    "position": 27
+  },
+  {
+    "term": "upbraid",
+    "group": 17,
+    "position": 28
+  },
+  {
+    "term": "vexation",
+    "group": 17,
+    "position": 29
+  },
+  {
+    "term": "abet",
+    "group": 18,
+    "position": 0
+  },
+  {
+    "term": "accessible",
+    "group": 18,
+    "position": 1
+  },
+  {
+    "term": "acquisitive",
+    "group": 18,
+    "position": 2
+  },
+  {
+    "term": "amalgamate",
+    "group": 18,
+    "position": 3
+  },
+  {
+    "term": "attenuate",
+    "group": 18,
+    "position": 4
+  },
+  {
+    "term": "augment",
+    "group": 18,
+    "position": 5
+  },
+  {
+    "term": "aversion",
+    "group": 18,
+    "position": 6
+  },
+  {
+    "term": "blithe",
+    "group": 18,
+    "position": 7
+  },
+  {
+    "term": "contempt",
+    "group": 18,
+    "position": 8
+  },
+  {
+    "term": "dawdle",
+    "group": 18,
+    "position": 9
+  },
+  {
+    "term": "deflect",
+    "group": 18,
+    "position": 10
+  },
+  {
+    "term": "discount",
+    "group": 18,
+    "position": 11
+  },
+  {
+    "term": "dissident",
+    "group": 18,
+    "position": 12
+  },
+  {
+    "term": "efficacious",
+    "group": 18,
+    "position": 13
+  },
+  {
+    "term": "equitable",
+    "group": 18,
+    "position": 14
+  },
+  {
+    "term": "erratic",
+    "group": 18,
+    "position": 15
+  },
+  {
+    "term": "industrious",
+    "group": 18,
+    "position": 16
+  },
+  {
+    "term": "inform",
+    "group": 18,
+    "position": 17
+  },
+  {
+    "term": "irksome",
+    "group": 18,
+    "position": 18
+  },
+  {
+    "term": "manacle",
+    "group": 18,
+    "position": 19
+  },
+  {
+    "term": "modest",
+    "group": 18,
+    "position": 20
+  },
+  {
+    "term": "noxious",
+    "group": 18,
+    "position": 21
+  },
+  {
+    "term": "pernicious",
+    "group": 18,
+    "position": 22
+  },
+  {
+    "term": "predicament",
+    "group": 18,
+    "position": 23
+  },
+  {
+    "term": "proficient",
+    "group": 18,
+    "position": 24
+  },
+  {
+    "term": "prolix",
+    "group": 18,
+    "position": 25
+  },
+  {
+    "term": "scorn",
+    "group": 18,
+    "position": 26
+  },
+  {
+    "term": "subordinate",
+    "group": 18,
+    "position": 27
+  },
+  {
+    "term": "unseemly",
+    "group": 18,
+    "position": 28
+  },
+  {
+    "term": "veritable",
+    "group": 18,
+    "position": 29
+  },
+  {
+    "term": "acolyte",
+    "group": 19,
+    "position": 0
+  },
+  {
+    "term": "anoint",
+    "group": 19,
+    "position": 1
+  },
+  {
+    "term": "base",
+    "group": 19,
+    "position": 2
+  },
+  {
+    "term": "coercion",
+    "group": 19,
+    "position": 3
+  },
+  {
+    "term": "coin",
+    "group": 19,
+    "position": 4
+  },
+  {
+    "term": "cunning",
+    "group": 19,
+    "position": 5
+  },
+  {
+    "term": "discomfit",
+    "group": 19,
+    "position": 6
+  },
+  {
+    "term": "dissent",
+    "group": 19,
+    "position": 7
+  },
+  {
+    "term": "distill",
+    "group": 19,
+    "position": 8
+  },
+  {
+    "term": "dubious",
+    "group": 19,
+    "position": 9
+  },
+  {
+    "term": "ebullient",
+    "group": 19,
+    "position": 10
+  },
+  {
+    "term": "facetious",
+    "group": 19,
+    "position": 11
+  },
+  {
+    "term": "fallible",
+    "group": 19,
+    "position": 12
+  },
+  {
+    "term": "florid",
+    "group": 19,
+    "position": 13
+  },
+  {
+    "term": "gawky",
+    "group": 19,
+    "position": 14
+  },
+  {
+    "term": "inveigle",
+    "group": 19,
+    "position": 15
+  },
+  {
+    "term": "jettison",
+    "group": 19,
+    "position": 16
+  },
+  {
+    "term": "mendacity",
+    "group": 19,
+    "position": 17
+  },
+  {
+    "term": "munificent",
+    "group": 19,
+    "position": 18
+  },
+  {
+    "term": "naive",
+    "group": 19,
+    "position": 19
+  },
+  {
+    "term": "noble",
+    "group": 19,
+    "position": 20
+  },
+  {
+    "term": "parochial",
+    "group": 19,
+    "position": 21
+  },
+  {
+    "term": "pedestrian",
+    "group": 19,
+    "position": 22
+  },
+  {
+    "term": "prevaricate",
+    "group": 19,
+    "position": 23
+  },
+  {
+    "term": "prime",
+    "group": 19,
+    "position": 24
+  },
+  {
+    "term": "radical",
+    "group": 19,
+    "position": 25
+  },
+  {
+    "term": "recrudescent",
+    "group": 19,
+    "position": 26
+  },
+  {
+    "term": "temporal",
+    "group": 19,
+    "position": 27
+  },
+  {
+    "term": "transitory",
+    "group": 19,
+    "position": 28
+  },
+  {
+    "term": "viable",
+    "group": 19,
+    "position": 29
+  },
+  {
+    "term": "abreast",
+    "group": 20,
+    "position": 0
+  },
+  {
+    "term": "confound",
+    "group": 20,
+    "position": 1
+  },
+  {
+    "term": "digression",
+    "group": 20,
+    "position": 2
+  },
+  {
+    "term": "discrepancy",
+    "group": 20,
+    "position": 3
+  },
+  {
+    "term": "duplicitous",
+    "group": 20,
+    "position": 4
+  },
+  {
+    "term": "expedient",
+    "group": 20,
+    "position": 5
+  },
+  {
+    "term": "fabricate",
+    "group": 20,
+    "position": 6
+  },
+  {
+    "term": "glum",
+    "group": 20,
+    "position": 7
+  },
+  {
+    "term": "harbinger",
+    "group": 20,
+    "position": 8
+  },
+  {
+    "term": "intrinsic",
+    "group": 20,
+    "position": 9
+  },
+  {
+    "term": "largesse",
+    "group": 20,
+    "position": 10
+  },
+  {
+    "term": "libertine",
+    "group": 20,
+    "position": 11
+  },
+  {
+    "term": "malfeasance",
+    "group": 20,
+    "position": 12
+  },
+  {
+    "term": "manifest",
+    "group": 20,
+    "position": 13
+  },
+  {
+    "term": "minute",
+    "group": 20,
+    "position": 14
+  },
+  {
+    "term": "modish",
+    "group": 20,
+    "position": 15
+  },
+  {
+    "term": "nascent",
+    "group": 20,
+    "position": 16
+  },
+  {
+    "term": "perennial",
+    "group": 20,
+    "position": 17
+  },
+  {
+    "term": "pious",
+    "group": 20,
+    "position": 18
+  },
+  {
+    "term": "providential",
+    "group": 20,
+    "position": 19
+  },
+  {
+    "term": "prowess",
+    "group": 20,
+    "position": 20
+  },
+  {
+    "term": "schism",
+    "group": 20,
+    "position": 21
+  },
+  {
+    "term": "slander",
+    "group": 20,
+    "position": 22
+  },
+  {
+    "term": "stalwart",
+    "group": 20,
+    "position": 23
+  },
+  {
+    "term": "supplicate",
+    "group": 20,
+    "position": 24
+  },
+  {
+    "term": "terse",
+    "group": 20,
+    "position": 25
+  },
+  {
+    "term": "tirade",
+    "group": 20,
+    "position": 26
+  },
+  {
+    "term": "universal",
+    "group": 20,
+    "position": 27
+  },
+  {
+    "term": "vanquish",
+    "group": 20,
+    "position": 28
+  },
+  {
+    "term": "woeful",
+    "group": 20,
+    "position": 29
+  },
+  {
+    "term": "abject",
+    "group": 21,
+    "position": 0
+  },
+  {
+    "term": "amicable",
+    "group": 21,
+    "position": 1
+  },
+  {
+    "term": "animosity",
+    "group": 21,
+    "position": 2
+  },
+  {
+    "term": "aver",
+    "group": 21,
+    "position": 3
+  },
+  {
+    "term": "barrage",
+    "group": 21,
+    "position": 4
+  },
+  {
+    "term": "cathartic",
+    "group": 21,
+    "position": 5
+  },
+  {
+    "term": "decipher",
+    "group": 21,
+    "position": 6
+  },
+  {
+    "term": "delusion",
+    "group": 21,
+    "position": 7
+  },
+  {
+    "term": "dispense",
+    "group": 21,
+    "position": 8
+  },
+  {
+    "term": "eloquent",
+    "group": 21,
+    "position": 9
+  },
+  {
+    "term": "enthrall",
+    "group": 21,
+    "position": 10
+  },
+  {
+    "term": "eradicate",
+    "group": 21,
+    "position": 11
+  },
+  {
+    "term": "fledgling",
+    "group": 21,
+    "position": 12
+  },
+  {
+    "term": "fortitude",
+    "group": 21,
+    "position": 13
+  },
+  {
+    "term": "fortuitous",
+    "group": 21,
+    "position": 14
+  },
+  {
+    "term": "goad",
+    "group": 21,
+    "position": 15
+  },
+  {
+    "term": "imminent",
+    "group": 21,
+    "position": 16
+  },
+  {
+    "term": "incontrovertible",
+    "group": 21,
+    "position": 17
+  },
+  {
+    "term": "itinerant",
+    "group": 21,
+    "position": 18
+  },
+  {
+    "term": "magnanimous",
+    "group": 21,
+    "position": 19
+  },
+  {
+    "term": "meritorious",
+    "group": 21,
+    "position": 20
+  },
+  {
+    "term": "mutiny",
+    "group": 21,
+    "position": 21
+  },
+  {
+    "term": "paradoxical",
+    "group": 21,
+    "position": 22
+  },
+  {
+    "term": "perseverance",
+    "group": 21,
+    "position": 23
+  },
+  {
+    "term": "render",
+    "group": 21,
+    "position": 24
+  },
+  {
+    "term": "repertoire",
+    "group": 21,
+    "position": 25
+  },
+  {
+    "term": "resilient",
+    "group": 21,
+    "position": 26
+  },
+  {
+    "term": "resolute",
+    "group": 21,
+    "position": 27
+  },
+  {
+    "term": "supple",
+    "group": 21,
+    "position": 28
+  },
+  {
+    "term": "valor",
+    "group": 21,
+    "position": 29
+  },
+  {
+    "term": "arresting",
+    "group": 22,
+    "position": 0
+  },
+  {
+    "term": "chastise",
+    "group": 22,
+    "position": 1
+  },
+  {
+    "term": "economy",
+    "group": 22,
+    "position": 2
+  },
+  {
+    "term": "elementary",
+    "group": 22,
+    "position": 3
+  },
+  {
+    "term": "embellish",
+    "group": 22,
+    "position": 4
+  },
+  {
+    "term": "euphoric",
+    "group": 22,
+    "position": 5
+  },
+  {
+    "term": "exonerate",
+    "group": 22,
+    "position": 6
+  },
+  {
+    "term": "extrapolate",
+    "group": 22,
+    "position": 7
+  },
+  {
+    "term": "falter",
+    "group": 22,
+    "position": 8
+  },
+  {
+    "term": "fervent",
+    "group": 22,
+    "position": 9
+  },
+  {
+    "term": "foment",
+    "group": 22,
+    "position": 10
+  },
+  {
+    "term": "gaffe",
+    "group": 22,
+    "position": 11
+  },
+  {
+    "term": "heterodox",
+    "group": 22,
+    "position": 12
+  },
+  {
+    "term": "histrionic",
+    "group": 22,
+    "position": 13
+  },
+  {
+    "term": "implicit",
+    "group": 22,
+    "position": 14
+  },
+  {
+    "term": "inviolate",
+    "group": 22,
+    "position": 15
+  },
+  {
+    "term": "liability",
+    "group": 22,
+    "position": 16
+  },
+  {
+    "term": "obstinate",
+    "group": 22,
+    "position": 17
+  },
+  {
+    "term": "painstaking",
+    "group": 22,
+    "position": 18
+  },
+  {
+    "term": "phlegmatic",
+    "group": 22,
+    "position": 19
+  },
+  {
+    "term": "prodigious",
+    "group": 22,
+    "position": 20
+  },
+  {
+    "term": "propensity",
+    "group": 22,
+    "position": 21
+  },
+  {
+    "term": "qualm",
+    "group": 22,
+    "position": 22
+  },
+  {
+    "term": "renege",
+    "group": 22,
+    "position": 23
+  },
+  {
+    "term": "stinting",
+    "group": 22,
+    "position": 24
+  },
+  {
+    "term": "temper",
+    "group": 22,
+    "position": 25
+  },
+  {
+    "term": "tentative",
+    "group": 22,
+    "position": 26
+  },
+  {
+    "term": "unprecedented",
+    "group": 22,
+    "position": 27
+  },
+  {
+    "term": "vivacious",
+    "group": 22,
+    "position": 28
+  },
+  {
+    "term": "allusive",
+    "group": 23,
+    "position": 0
+  },
+  {
+    "term": "astute",
+    "group": 23,
+    "position": 1
+  },
+  {
+    "term": "commence",
+    "group": 23,
+    "position": 2
+  },
+  {
+    "term": "convalescent",
+    "group": 23,
+    "position": 3
+  },
+  {
+    "term": "curb",
+    "group": 23,
+    "position": 4
+  },
+  {
+    "term": "decry",
+    "group": 23,
+    "position": 5
+  },
+  {
+    "term": "duress",
+    "group": 23,
+    "position": 6
+  },
+  {
+    "term": "evoke",
+    "group": 23,
+    "position": 7
+  },
+  {
+    "term": "fawn",
+    "group": 23,
+    "position": 8
+  },
+  {
+    "term": "fret",
+    "group": 23,
+    "position": 9
+  },
+  {
+    "term": "glib",
+    "group": 23,
+    "position": 10
+  },
+  {
+    "term": "headstrong",
+    "group": 23,
+    "position": 11
+  },
+  {
+    "term": "intermittent",
+    "group": 23,
+    "position": 12
+  },
+  {
+    "term": "ire",
+    "group": 23,
+    "position": 13
+  },
+  {
+    "term": "languid",
+    "group": 23,
+    "position": 14
+  },
+  {
+    "term": "lull",
+    "group": 23,
+    "position": 15
+  },
+  {
+    "term": "mettlesome",
+    "group": 23,
+    "position": 16
+  },
+  {
+    "term": "mollify",
+    "group": 23,
+    "position": 17
+  },
+  {
+    "term": "neutralize",
+    "group": 23,
+    "position": 18
+  },
+  {
+    "term": "nonplussed",
+    "group": 23,
+    "position": 19
+  },
+  {
+    "term": "precipitous",
+    "group": 23,
+    "position": 20
+  },
+  {
+    "term": "pretentious",
+    "group": 23,
+    "position": 21
+  },
+  {
+    "term": "profound",
+    "group": 23,
+    "position": 22
+  },
+  {
+    "term": "propagate",
+    "group": 23,
+    "position": 23
+  },
+  {
+    "term": "recourse",
+    "group": 23,
+    "position": 24
+  },
+  {
+    "term": "refute",
+    "group": 23,
+    "position": 25
+  },
+  {
+    "term": "regress",
+    "group": 23,
+    "position": 26
+  },
+  {
+    "term": "repercussion",
+    "group": 23,
+    "position": 27
+  },
+  {
+    "term": "replenish",
+    "group": 23,
+    "position": 28
+  },
+  {
+    "term": "vigilant",
+    "group": 23,
+    "position": 29
+  },
+  {
+    "term": "assail",
+    "group": 24,
+    "position": 0
+  },
+  {
+    "term": "benevolent",
+    "group": 24,
+    "position": 1
+  },
+  {
+    "term": "berate",
+    "group": 24,
+    "position": 2
+  },
+  {
+    "term": "buoyant",
+    "group": 24,
+    "position": 3
+  },
+  {
+    "term": "buttress",
+    "group": 24,
+    "position": 4
+  },
+  {
+    "term": "condone",
+    "group": 24,
+    "position": 5
+  },
+  {
+    "term": "contravene",
+    "group": 24,
+    "position": 6
+  },
+  {
+    "term": "denounce",
+    "group": 24,
+    "position": 7
+  },
+  {
+    "term": "despotic",
+    "group": 24,
+    "position": 8
+  },
+  {
+    "term": "deviate",
+    "group": 24,
+    "position": 9
+  },
+  {
+    "term": "disinterested",
+    "group": 24,
+    "position": 10
+  },
+  {
+    "term": "escalate",
+    "group": 24,
+    "position": 11
+  },
+  {
+    "term": "exorcise",
+    "group": 24,
+    "position": 12
+  },
+  {
+    "term": "finicky",
+    "group": 24,
+    "position": 13
+  },
+  {
+    "term": "foil",
+    "group": 24,
+    "position": 14
+  },
+  {
+    "term": "intertwined",
+    "group": 24,
+    "position": 15
+  },
+  {
+    "term": "inundate",
+    "group": 24,
+    "position": 16
+  },
+  {
+    "term": "ironclad",
+    "group": 24,
+    "position": 17
+  },
+  {
+    "term": "jeopardize",
+    "group": 24,
+    "position": 18
+  },
+  {
+    "term": "mercurial",
+    "group": 24,
+    "position": 19
+  },
+  {
+    "term": "oblivious",
+    "group": 24,
+    "position": 20
+  },
+  {
+    "term": "perpetrate",
+    "group": 24,
+    "position": 21
+  },
+  {
+    "term": "plaintive",
+    "group": 24,
+    "position": 22
+  },
+  {
+    "term": "poignant",
+    "group": 24,
+    "position": 23
+  },
+  {
+    "term": "quiescent",
+    "group": 24,
+    "position": 24
+  },
+  {
+    "term": "reiterate",
+    "group": 24,
+    "position": 25
+  },
+  {
+    "term": "subside",
+    "group": 24,
+    "position": 26
+  },
+  {
+    "term": "subsume",
+    "group": 24,
+    "position": 27
+  },
+  {
+    "term": "surmount",
+    "group": 24,
+    "position": 28
+  },
+  {
+    "term": "tangential",
+    "group": 24,
+    "position": 29
+  },
+  {
+    "term": "adept",
+    "group": 25,
+    "position": 0
+  },
+  {
+    "term": "adverse",
+    "group": 25,
+    "position": 1
+  },
+  {
+    "term": "appropriate",
+    "group": 25,
+    "position": 2
+  },
+  {
+    "term": "archetype",
+    "group": 25,
+    "position": 3
+  },
+  {
+    "term": "articulate",
+    "group": 25,
+    "position": 4
+  },
+  {
+    "term": "auspicious",
+    "group": 25,
+    "position": 5
+  },
+  {
+    "term": "bereft",
+    "group": 25,
+    "position": 6
+  },
+  {
+    "term": "captious",
+    "group": 25,
+    "position": 7
+  },
+  {
+    "term": "conclusive",
+    "group": 25,
+    "position": 8
+  },
+  {
+    "term": "conspire",
+    "group": 25,
+    "position": 9
+  },
+  {
+    "term": "delineate",
+    "group": 25,
+    "position": 10
+  },
+  {
+    "term": "disentangle",
+    "group": 25,
+    "position": 11
+  },
+  {
+    "term": "exhort",
+    "group": 25,
+    "position": 12
+  },
+  {
+    "term": "frailty",
+    "group": 25,
+    "position": 13
+  },
+  {
+    "term": "grievance",
+    "group": 25,
+    "position": 14
+  },
+  {
+    "term": "harangue",
+    "group": 25,
+    "position": 15
+  },
+  {
+    "term": "ploy",
+    "group": 25,
+    "position": 16
+  },
+  {
+    "term": "poise",
+    "group": 25,
+    "position": 17
+  },
+  {
+    "term": "pomposity",
+    "group": 25,
+    "position": 18
+  },
+  {
+    "term": "proxy",
+    "group": 25,
+    "position": 19
+  },
+  {
+    "term": "relent",
+    "group": 25,
+    "position": 20
+  },
+  {
+    "term": "rhetoric",
+    "group": 25,
+    "position": 21
+  },
+  {
+    "term": "rigor",
+    "group": 25,
+    "position": 22
+  },
+  {
+    "term": "sparse",
+    "group": 25,
+    "position": 23
+  },
+  {
+    "term": "steadfast",
+    "group": 25,
+    "position": 24
+  },
+  {
+    "term": "suspect",
+    "group": 25,
+    "position": 25
+  },
+  {
+    "term": "tedious",
+    "group": 25,
+    "position": 26
+  },
+  {
+    "term": "vitality",
+    "group": 25,
+    "position": 27
+  },
+  {
+    "term": "whimsical",
+    "group": 25,
+    "position": 28
+  },
+  {
+    "term": "yield",
+    "group": 25,
+    "position": 29
+  },
+  {
+    "term": "apprehension",
+    "group": 26,
+    "position": 0
+  },
+  {
+    "term": "ardent",
+    "group": 26,
+    "position": 1
+  },
+  {
+    "term": "axiomatic",
+    "group": 26,
+    "position": 2
+  },
+  {
+    "term": "cease",
+    "group": 26,
+    "position": 3
+  },
+  {
+    "term": "conducive",
+    "group": 26,
+    "position": 4
+  },
+  {
+    "term": "corporeal",
+    "group": 26,
+    "position": 5
+  },
+  {
+    "term": "doctrinaire",
+    "group": 26,
+    "position": 6
+  },
+  {
+    "term": "eclectic",
+    "group": 26,
+    "position": 7
+  },
+  {
+    "term": "equanimity",
+    "group": 26,
+    "position": 8
+  },
+  {
+    "term": "exorbitant",
+    "group": 26,
+    "position": 9
+  },
+  {
+    "term": "fickle",
+    "group": 26,
+    "position": 10
+  },
+  {
+    "term": "figurative",
+    "group": 26,
+    "position": 11
+  },
+  {
+    "term": "flustered",
+    "group": 26,
+    "position": 12
+  },
+  {
+    "term": "gullible",
+    "group": 26,
+    "position": 13
+  },
+  {
+    "term": "idiosyncratic",
+    "group": 26,
+    "position": 14
+  },
+  {
+    "term": "incidental",
+    "group": 26,
+    "position": 15
+  },
+  {
+    "term": "ingrained",
+    "group": 26,
+    "position": 16
+  },
+  {
+    "term": "insolent",
+    "group": 26,
+    "position": 17
+  },
+  {
+    "term": "lampoon",
+    "group": 26,
+    "position": 18
+  },
+  {
+    "term": "lavish",
+    "group": 26,
+    "position": 19
+  },
+  {
+    "term": "lugubrious",
+    "group": 26,
+    "position": 20
+  },
+  {
+    "term": "macabre",
+    "group": 26,
+    "position": 21
+  },
+  {
+    "term": "morose",
+    "group": 26,
+    "position": 22
+  },
+  {
+    "term": "officious",
+    "group": 26,
+    "position": 23
+  },
+  {
+    "term": "ramification",
+    "group": 26,
+    "position": 24
+  },
+  {
+    "term": "serene",
+    "group": 26,
+    "position": 25
+  },
+  {
+    "term": "supplant",
+    "group": 26,
+    "position": 26
+  },
+  {
+    "term": "tacit",
+    "group": 26,
+    "position": 27
+  },
+  {
+    "term": "transcend",
+    "group": 26,
+    "position": 28
+  },
+  {
+    "term": "treatise",
+    "group": 26,
+    "position": 29
+  },
+  {
+    "term": "antagonize",
+    "group": 27,
+    "position": 0
+  },
+  {
+    "term": "barren",
+    "group": 27,
+    "position": 1
+  },
+  {
+    "term": "bombastic",
+    "group": 27,
+    "position": 2
+  },
+  {
+    "term": "cajole",
+    "group": 27,
+    "position": 3
+  },
+  {
+    "term": "chary",
+    "group": 27,
+    "position": 4
+  },
+  {
+    "term": "curmudgeon",
+    "group": 27,
+    "position": 5
+  },
+  {
+    "term": "dirge",
+    "group": 27,
+    "position": 6
+  },
+  {
+    "term": "estimable",
+    "group": 27,
+    "position": 7
+  },
+  {
+    "term": "euphemism",
+    "group": 27,
+    "position": 8
+  },
+  {
+    "term": "excoriate",
+    "group": 27,
+    "position": 9
+  },
+  {
+    "term": "exigent",
+    "group": 27,
+    "position": 10
+  },
+  {
+    "term": "haughty",
+    "group": 27,
+    "position": 11
+  },
+  {
+    "term": "heady",
+    "group": 27,
+    "position": 12
+  },
+  {
+    "term": "imperturbable",
+    "group": 27,
+    "position": 13
+  },
+  {
+    "term": "implacable",
+    "group": 27,
+    "position": 14
+  },
+  {
+    "term": "lambaste",
+    "group": 27,
+    "position": 15
+  },
+  {
+    "term": "miscreant",
+    "group": 27,
+    "position": 16
+  },
+  {
+    "term": "peccadillo",
+    "group": 27,
+    "position": 17
+  },
+  {
+    "term": "philistine",
+    "group": 27,
+    "position": 18
+  },
+  {
+    "term": "relegate",
+    "group": 27,
+    "position": 19
+  },
+  {
+    "term": "repugnant",
+    "group": 27,
+    "position": 20
+  },
+  {
+    "term": "sentimental",
+    "group": 27,
+    "position": 21
+  },
+  {
+    "term": "squander",
+    "group": 27,
+    "position": 22
+  },
+  {
+    "term": "swindle",
+    "group": 27,
+    "position": 23
+  },
+  {
+    "term": "tangible",
+    "group": 27,
+    "position": 24
+  },
+  {
+    "term": "turpitude",
+    "group": 27,
+    "position": 25
+  },
+  {
+    "term": "unalloyed",
+    "group": 27,
+    "position": 26
+  },
+  {
+    "term": "undercut",
+    "group": 27,
+    "position": 27
+  },
+  {
+    "term": "wheedle",
+    "group": 27,
+    "position": 28
+  },
+  {
+    "term": "xenophobic",
+    "group": 27,
+    "position": 29
+  },
+  {
+    "term": "abeyance",
+    "group": 28,
+    "position": 0
+  },
+  {
+    "term": "abstract",
+    "group": 28,
+    "position": 1
+  },
+  {
+    "term": "affront",
+    "group": 28,
+    "position": 2
+  },
+  {
+    "term": "agitate",
+    "group": 28,
+    "position": 3
+  },
+  {
+    "term": "august",
+    "group": 28,
+    "position": 4
+  },
+  {
+    "term": "burnish",
+    "group": 28,
+    "position": 5
+  },
+  {
+    "term": "coy",
+    "group": 28,
+    "position": 6
+  },
+  {
+    "term": "deprecate",
+    "group": 28,
+    "position": 7
+  },
+  {
+    "term": "disdain",
+    "group": 28,
+    "position": 8
+  },
+  {
+    "term": "disperse",
+    "group": 28,
+    "position": 9
+  },
+  {
+    "term": "distend",
+    "group": 28,
+    "position": 10
+  },
+  {
+    "term": "endemic",
+    "group": 28,
+    "position": 11
+  },
+  {
+    "term": "enmity",
+    "group": 28,
+    "position": 12
+  },
+  {
+    "term": "gauche",
+    "group": 28,
+    "position": 13
+  },
+  {
+    "term": "hysterical",
+    "group": 28,
+    "position": 14
+  },
+  {
+    "term": "impudent",
+    "group": 28,
+    "position": 15
+  },
+  {
+    "term": "inchoate",
+    "group": 28,
+    "position": 16
+  },
+  {
+    "term": "penchant",
+    "group": 28,
+    "position": 17
+  },
+  {
+    "term": "quandary",
+    "group": 28,
+    "position": 18
+  },
+  {
+    "term": "quarantine",
+    "group": 28,
+    "position": 19
+  },
+  {
+    "term": "quash",
+    "group": 28,
+    "position": 20
+  },
+  {
+    "term": "quibble",
+    "group": 28,
+    "position": 21
+  },
+  {
+    "term": "ravage",
+    "group": 28,
+    "position": 22
+  },
+  {
+    "term": "recant",
+    "group": 28,
+    "position": 23
+  },
+  {
+    "term": "redoubtable",
+    "group": 28,
+    "position": 24
+  },
+  {
+    "term": "retiring",
+    "group": 28,
+    "position": 25
+  },
+  {
+    "term": "shrill",
+    "group": 28,
+    "position": 26
+  },
+  {
+    "term": "sophistry",
+    "group": 28,
+    "position": 27
+  },
+  {
+    "term": "substantiate",
+    "group": 28,
+    "position": 28
+  },
+  {
+    "term": "wily",
+    "group": 28,
+    "position": 29
+  },
+  {
+    "term": "abscond",
+    "group": 29,
+    "position": 0
+  },
+  {
+    "term": "apogee",
+    "group": 29,
+    "position": 1
+  },
+  {
+    "term": "aspersion",
+    "group": 29,
+    "position": 2
+  },
+  {
+    "term": "bawdy",
+    "group": 29,
+    "position": 3
+  },
+  {
+    "term": "chagrin",
+    "group": 29,
+    "position": 4
+  },
+  {
+    "term": "collude",
+    "group": 29,
+    "position": 5
+  },
+  {
+    "term": "commiserate",
+    "group": 29,
+    "position": 6
+  },
+  {
+    "term": "conflagration",
+    "group": 29,
+    "position": 7
+  },
+  {
+    "term": "contretemps",
+    "group": 29,
+    "position": 8
+  },
+  {
+    "term": "conviction",
+    "group": 29,
+    "position": 9
+  },
+  {
+    "term": "croon",
+    "group": 29,
+    "position": 10
+  },
+  {
+    "term": "depose",
+    "group": 29,
+    "position": 11
+  },
+  {
+    "term": "dowdy",
+    "group": 29,
+    "position": 12
+  },
+  {
+    "term": "détente",
+    "group": 29,
+    "position": 13
+  },
+  {
+    "term": "echelon",
+    "group": 29,
+    "position": 14
+  },
+  {
+    "term": "ennui",
+    "group": 29,
+    "position": 15
+  },
+  {
+    "term": "expatiate",
+    "group": 29,
+    "position": 16
+  },
+  {
+    "term": "fraught",
+    "group": 29,
+    "position": 17
+  },
+  {
+    "term": "fulcrum",
+    "group": 29,
+    "position": 18
+  },
+  {
+    "term": "imbroglio",
+    "group": 29,
+    "position": 19
+  },
+  {
+    "term": "jocund",
+    "group": 29,
+    "position": 20
+  },
+  {
+    "term": "languish",
+    "group": 29,
+    "position": 21
+  },
+  {
+    "term": "nadir",
+    "group": 29,
+    "position": 22
+  },
+  {
+    "term": "nimble",
+    "group": 29,
+    "position": 23
+  },
+  {
+    "term": "ominous",
+    "group": 29,
+    "position": 24
+  },
+  {
+    "term": "outlandish",
+    "group": 29,
+    "position": 25
+  },
+  {
+    "term": "propitious",
+    "group": 29,
+    "position": 26
+  },
+  {
+    "term": "prurient",
+    "group": 29,
+    "position": 27
+  },
+  {
+    "term": "sadistic",
+    "group": 29,
+    "position": 28
+  },
+  {
+    "term": "zenith",
+    "group": 29,
+    "position": 29
+  },
+  {
+    "term": "aberrant",
+    "group": 30,
+    "position": 0
+  },
+  {
+    "term": "abide",
+    "group": 30,
+    "position": 1
+  },
+  {
+    "term": "bravado",
+    "group": 30,
+    "position": 2
+  },
+  {
+    "term": "callow",
+    "group": 30,
+    "position": 3
+  },
+  {
+    "term": "capitulate",
+    "group": 30,
+    "position": 4
+  },
+  {
+    "term": "cogitate",
+    "group": 30,
+    "position": 5
+  },
+  {
+    "term": "deportment",
+    "group": 30,
+    "position": 6
+  },
+  {
+    "term": "extemporize",
+    "group": 30,
+    "position": 7
+  },
+  {
+    "term": "factious",
+    "group": 30,
+    "position": 8
+  },
+  {
+    "term": "fallow",
+    "group": 30,
+    "position": 9
+  },
+  {
+    "term": "feint",
+    "group": 30,
+    "position": 10
+  },
+  {
+    "term": "flagrant",
+    "group": 30,
+    "position": 11
+  },
+  {
+    "term": "gratuitous",
+    "group": 30,
+    "position": 12
+  },
+  {
+    "term": "grovel",
+    "group": 30,
+    "position": 13
+  },
+  {
+    "term": "indecorous",
+    "group": 30,
+    "position": 14
+  },
+  {
+    "term": "intrigue",
+    "group": 30,
+    "position": 15
+  },
+  {
+    "term": "nominal",
+    "group": 30,
+    "position": 16
+  },
+  {
+    "term": "obdurate",
+    "group": 30,
+    "position": 17
+  },
+  {
+    "term": "obstreperous",
+    "group": 30,
+    "position": 18
+  },
+  {
+    "term": "odious",
+    "group": 30,
+    "position": 19
+  },
+  {
+    "term": "plucky",
+    "group": 30,
+    "position": 20
+  },
+  {
+    "term": "precocious",
+    "group": 30,
+    "position": 21
+  },
+  {
+    "term": "remuneration",
+    "group": 30,
+    "position": 22
+  },
+  {
+    "term": "slovenly",
+    "group": 30,
+    "position": 23
+  },
+  {
+    "term": "soliloquy",
+    "group": 30,
+    "position": 24
+  },
+  {
+    "term": "spurn",
+    "group": 30,
+    "position": 25
+  },
+  {
+    "term": "stolid",
+    "group": 30,
+    "position": 26
+  },
+  {
+    "term": "temerity",
+    "group": 30,
+    "position": 27
+  },
+  {
+    "term": "tenuous",
+    "group": 30,
+    "position": 28
+  },
+  {
+    "term": "verve",
+    "group": 30,
+    "position": 29
+  },
+  {
+    "term": "abrogate",
+    "group": 31,
+    "position": 0
+  },
+  {
+    "term": "aghast",
+    "group": 31,
+    "position": 1
+  },
+  {
+    "term": "apprise",
+    "group": 31,
+    "position": 2
+  },
+  {
+    "term": "beguile",
+    "group": 31,
+    "position": 3
+  },
+  {
+    "term": "boon",
+    "group": 31,
+    "position": 4
+  },
+  {
+    "term": "callous",
+    "group": 31,
+    "position": 5
+  },
+  {
+    "term": "coddle",
+    "group": 31,
+    "position": 6
+  },
+  {
+    "term": "crescendo",
+    "group": 31,
+    "position": 7
+  },
+  {
+    "term": "extenuating",
+    "group": 31,
+    "position": 8
+  },
+  {
+    "term": "frenetic",
+    "group": 31,
+    "position": 9
+  },
+  {
+    "term": "fringe",
+    "group": 31,
+    "position": 10
+  },
+  {
+    "term": "hapless",
+    "group": 31,
+    "position": 11
+  },
+  {
+    "term": "immaculate",
+    "group": 31,
+    "position": 12
+  },
+  {
+    "term": "obfuscate",
+    "group": 31,
+    "position": 13
+  },
+  {
+    "term": "ossify",
+    "group": 31,
+    "position": 14
+  },
+  {
+    "term": "pastiche",
+    "group": 31,
+    "position": 15
+  },
+  {
+    "term": "perspicacious",
+    "group": 31,
+    "position": 16
+  },
+  {
+    "term": "ponderous",
+    "group": 31,
+    "position": 17
+  },
+  {
+    "term": "recluse",
+    "group": 31,
+    "position": 18
+  },
+  {
+    "term": "retaliate",
+    "group": 31,
+    "position": 19
+  },
+  {
+    "term": "rhapsody",
+    "group": 31,
+    "position": 20
+  },
+  {
+    "term": "serendipitous",
+    "group": 31,
+    "position": 21
+  },
+  {
+    "term": "shirk",
+    "group": 31,
+    "position": 22
+  },
+  {
+    "term": "sinecure",
+    "group": 31,
+    "position": 23
+  },
+  {
+    "term": "sinuous",
+    "group": 31,
+    "position": 24
+  },
+  {
+    "term": "sordid",
+    "group": 31,
+    "position": 25
+  },
+  {
+    "term": "stanch",
+    "group": 31,
+    "position": 26
+  },
+  {
+    "term": "surfeit",
+    "group": 31,
+    "position": 27
+  },
+  {
+    "term": "ulterior",
+    "group": 31,
+    "position": 28
+  },
+  {
+    "term": "voluble",
+    "group": 31,
+    "position": 29
+  },
+  {
+    "term": "abstruse",
+    "group": 32,
+    "position": 0
+  },
+  {
+    "term": "auxiliary",
+    "group": 32,
+    "position": 1
+  },
+  {
+    "term": "caricature",
+    "group": 32,
+    "position": 2
+  },
+  {
+    "term": "depravity",
+    "group": 32,
+    "position": 3
+  },
+  {
+    "term": "dilettante",
+    "group": 32,
+    "position": 4
+  },
+  {
+    "term": "effrontery",
+    "group": 32,
+    "position": 5
+  },
+  {
+    "term": "encroach",
+    "group": 32,
+    "position": 6
+  },
+  {
+    "term": "endow",
+    "group": 32,
+    "position": 7
+  },
+  {
+    "term": "entreat",
+    "group": 32,
+    "position": 8
+  },
+  {
+    "term": "gregarious",
+    "group": 32,
+    "position": 9
+  },
+  {
+    "term": "indictment",
+    "group": 32,
+    "position": 10
+  },
+  {
+    "term": "indignant",
+    "group": 32,
+    "position": 11
+  },
+  {
+    "term": "ineluctable",
+    "group": 32,
+    "position": 12
+  },
+  {
+    "term": "inquisitive",
+    "group": 32,
+    "position": 13
+  },
+  {
+    "term": "latitude",
+    "group": 32,
+    "position": 14
+  },
+  {
+    "term": "levity",
+    "group": 32,
+    "position": 15
+  },
+  {
+    "term": "malevolent",
+    "group": 32,
+    "position": 16
+  },
+  {
+    "term": "mediate",
+    "group": 32,
+    "position": 17
+  },
+  {
+    "term": "occlude",
+    "group": 32,
+    "position": 18
+  },
+  {
+    "term": "pacify",
+    "group": 32,
+    "position": 19
+  },
+  {
+    "term": "paragon",
+    "group": 32,
+    "position": 20
+  },
+  {
+    "term": "patronize",
+    "group": 32,
+    "position": 21
+  },
+  {
+    "term": "penurious",
+    "group": 32,
+    "position": 22
+  },
+  {
+    "term": "piquant",
+    "group": 32,
+    "position": 23
+  },
+  {
+    "term": "rampant",
+    "group": 32,
+    "position": 24
+  },
+  {
+    "term": "remote",
+    "group": 32,
+    "position": 25
+  },
+  {
+    "term": "reprobate",
+    "group": 32,
+    "position": 26
+  },
+  {
+    "term": "turbid",
+    "group": 32,
+    "position": 27
+  },
+  {
+    "term": "turgid",
+    "group": 32,
+    "position": 28
+  },
+  {
+    "term": "vacuous",
+    "group": 32,
+    "position": 29
+  },
+  {
+    "term": "affluent",
+    "group": 33,
+    "position": 0
+  },
+  {
+    "term": "allegorical",
+    "group": 33,
+    "position": 1
+  },
+  {
+    "term": "allude",
+    "group": 33,
+    "position": 2
+  },
+  {
+    "term": "amplify",
+    "group": 33,
+    "position": 3
+  },
+  {
+    "term": "catastrophic",
+    "group": 33,
+    "position": 4
+  },
+  {
+    "term": "contemporary",
+    "group": 33,
+    "position": 5
+  },
+  {
+    "term": "conundrum",
+    "group": 33,
+    "position": 6
+  },
+  {
+    "term": "defame",
+    "group": 33,
+    "position": 7
+  },
+  {
+    "term": "detract",
+    "group": 33,
+    "position": 8
+  },
+  {
+    "term": "detrimental",
+    "group": 33,
+    "position": 9
+  },
+  {
+    "term": "devious",
+    "group": 33,
+    "position": 10
+  },
+  {
+    "term": "dormant",
+    "group": 33,
+    "position": 11
+  },
+  {
+    "term": "draconian",
+    "group": 33,
+    "position": 12
+  },
+  {
+    "term": "egalitarian",
+    "group": 33,
+    "position": 13
+  },
+  {
+    "term": "elusive",
+    "group": 33,
+    "position": 14
+  },
+  {
+    "term": "erstwhile",
+    "group": 33,
+    "position": 15
+  },
+  {
+    "term": "gloat",
+    "group": 33,
+    "position": 16
+  },
+  {
+    "term": "harrowing",
+    "group": 33,
+    "position": 17
+  },
+  {
+    "term": "indefinite",
+    "group": 33,
+    "position": 18
+  },
+  {
+    "term": "ingenious",
+    "group": 33,
+    "position": 19
+  },
+  {
+    "term": "keen",
+    "group": 33,
+    "position": 20
+  },
+  {
+    "term": "multifaceted",
+    "group": 33,
+    "position": 21
+  },
+  {
+    "term": "omniscient",
+    "group": 33,
+    "position": 22
+  },
+  {
+    "term": "remarkable",
+    "group": 33,
+    "position": 23
+  },
+  {
+    "term": "sober",
+    "group": 33,
+    "position": 24
+  },
+  {
+    "term": "stem from",
+    "group": 33,
+    "position": 25
+  },
+  {
+    "term": "subdued",
+    "group": 33,
+    "position": 26
+  },
+  {
+    "term": "token",
+    "group": 33,
+    "position": 27
+  },
+  {
+    "term": "unravel",
+    "group": 33,
+    "position": 28
+  },
+  {
+    "term": "withstand",
+    "group": 33,
+    "position": 29
+  },
+  {
+    "term": "abrasive",
+    "group": 34,
+    "position": 0
+  },
+  {
+    "term": "artful",
+    "group": 34,
+    "position": 1
+  },
+  {
+    "term": "avert",
+    "group": 34,
+    "position": 2
+  },
+  {
+    "term": "avid",
+    "group": 34,
+    "position": 3
+  },
+  {
+    "term": "brevity",
+    "group": 34,
+    "position": 4
+  },
+  {
+    "term": "bromide",
+    "group": 34,
+    "position": 5
+  },
+  {
+    "term": "circumstantial",
+    "group": 34,
+    "position": 6
+  },
+  {
+    "term": "cloying",
+    "group": 34,
+    "position": 7
+  },
+  {
+    "term": "counterfeit",
+    "group": 34,
+    "position": 8
+  },
+  {
+    "term": "denigrate",
+    "group": 34,
+    "position": 9
+  },
+  {
+    "term": "disciple",
+    "group": 34,
+    "position": 10
+  },
+  {
+    "term": "extol",
+    "group": 34,
+    "position": 11
+  },
+  {
+    "term": "forebode",
+    "group": 34,
+    "position": 12
+  },
+  {
+    "term": "ideologue",
+    "group": 34,
+    "position": 13
+  },
+  {
+    "term": "impediment",
+    "group": 34,
+    "position": 14
+  },
+  {
+    "term": "imperative",
+    "group": 34,
+    "position": 15
+  },
+  {
+    "term": "impulsive",
+    "group": 34,
+    "position": 16
+  },
+  {
+    "term": "interminable",
+    "group": 34,
+    "position": 17
+  },
+  {
+    "term": "intuitive",
+    "group": 34,
+    "position": 18
+  },
+  {
+    "term": "lassitude",
+    "group": 34,
+    "position": 19
+  },
+  {
+    "term": "omit",
+    "group": 34,
+    "position": 20
+  },
+  {
+    "term": "ornate",
+    "group": 34,
+    "position": 21
+  },
+  {
+    "term": "paltry",
+    "group": 34,
+    "position": 22
+  },
+  {
+    "term": "pejorative",
+    "group": 34,
+    "position": 23
+  },
+  {
+    "term": "prefigure",
+    "group": 34,
+    "position": 24
+  },
+  {
+    "term": "presage",
+    "group": 34,
+    "position": 25
+  },
+  {
+    "term": "prescribe",
+    "group": 34,
+    "position": 26
+  },
+  {
+    "term": "prevail",
+    "group": 34,
+    "position": 27
+  },
+  {
+    "term": "propitiate",
+    "group": 34,
+    "position": 28
+  },
+  {
+    "term": "recapitulate",
+    "group": 34,
+    "position": 29
+  },
+  {
+    "term": "aplomb",
+    "group": 35,
+    "position": 0
+  },
+  {
+    "term": "apposite",
+    "group": 35,
+    "position": 1
+  },
+  {
+    "term": "beholden",
+    "group": 35,
+    "position": 2
+  },
+  {
+    "term": "belittle",
+    "group": 35,
+    "position": 3
+  },
+  {
+    "term": "cluster",
+    "group": 35,
+    "position": 4
+  },
+  {
+    "term": "coherent",
+    "group": 35,
+    "position": 5
+  },
+  {
+    "term": "contemplate",
+    "group": 35,
+    "position": 6
+  },
+  {
+    "term": "crafty",
+    "group": 35,
+    "position": 7
+  },
+  {
+    "term": "dismantle",
+    "group": 35,
+    "position": 8
+  },
+  {
+    "term": "elaborate",
+    "group": 35,
+    "position": 9
+  },
+  {
+    "term": "exegesis",
+    "group": 35,
+    "position": 10
+  },
+  {
+    "term": "forgo",
+    "group": 35,
+    "position": 11
+  },
+  {
+    "term": "impenetrable",
+    "group": 35,
+    "position": 12
+  },
+  {
+    "term": "impervious",
+    "group": 35,
+    "position": 13
+  },
+  {
+    "term": "inalienable",
+    "group": 35,
+    "position": 14
+  },
+  {
+    "term": "inept",
+    "group": 35,
+    "position": 15
+  },
+  {
+    "term": "martinet",
+    "group": 35,
+    "position": 16
+  },
+  {
+    "term": "narcissism",
+    "group": 35,
+    "position": 17
+  },
+  {
+    "term": "objurgation",
+    "group": 35,
+    "position": 18
+  },
+  {
+    "term": "passable",
+    "group": 35,
+    "position": 19
+  },
+  {
+    "term": "penetrating",
+    "group": 35,
+    "position": 20
+  },
+  {
+    "term": "picturesque",
+    "group": 35,
+    "position": 21
+  },
+  {
+    "term": "reflect",
+    "group": 35,
+    "position": 22
+  },
+  {
+    "term": "resourceful",
+    "group": 35,
+    "position": 23
+  },
+  {
+    "term": "retrench",
+    "group": 35,
+    "position": 24
+  },
+  {
+    "term": "self-indulgent",
+    "group": 35,
+    "position": 25
+  },
+  {
+    "term": "speculate",
+    "group": 35,
+    "position": 26
+  },
+  {
+    "term": "staid",
+    "group": 35,
+    "position": 27
+  },
+  {
+    "term": "suppress",
+    "group": 35,
+    "position": 28
+  },
+  {
+    "term": "vestigial",
+    "group": 35,
+    "position": 29
+  },
+  {
+    "term": "accord",
+    "group": 36,
+    "position": 0
+  },
+  {
+    "term": "ad hoc",
+    "group": 36,
+    "position": 1
+  },
+  {
+    "term": "adhere",
+    "group": 36,
+    "position": 2
+  },
+  {
+    "term": "all-encompassing",
+    "group": 36,
+    "position": 3
+  },
+  {
+    "term": "aphorism",
+    "group": 36,
+    "position": 4
+  },
+  {
+    "term": "benchmark",
+    "group": 36,
+    "position": 5
+  },
+  {
+    "term": "blighted",
+    "group": 36,
+    "position": 6
+  },
+  {
+    "term": "content",
+    "group": 36,
+    "position": 7
+  },
+  {
+    "term": "debase",
+    "group": 36,
+    "position": 8
+  },
+  {
+    "term": "disconcerting",
+    "group": 36,
+    "position": 9
+  },
+  {
+    "term": "extant",
+    "group": 36,
+    "position": 10
+  },
+  {
+    "term": "facility",
+    "group": 36,
+    "position": 11
+  },
+  {
+    "term": "fitful",
+    "group": 36,
+    "position": 12
+  },
+  {
+    "term": "incite",
+    "group": 36,
+    "position": 13
+  },
+  {
+    "term": "induce",
+    "group": 36,
+    "position": 14
+  },
+  {
+    "term": "infelicity",
+    "group": 36,
+    "position": 15
+  },
+  {
+    "term": "intelligible",
+    "group": 36,
+    "position": 16
+  },
+  {
+    "term": "makeshift",
+    "group": 36,
+    "position": 17
+  },
+  {
+    "term": "onetime",
+    "group": 36,
+    "position": 18
+  },
+  {
+    "term": "opportunistic",
+    "group": 36,
+    "position": 19
+  },
+  {
+    "term": "plausible",
+    "group": 36,
+    "position": 20
+  },
+  {
+    "term": "posturing",
+    "group": 36,
+    "position": 21
+  },
+  {
+    "term": "potent",
+    "group": 36,
+    "position": 22
+  },
+  {
+    "term": "redundant",
+    "group": 36,
+    "position": 23
+  },
+  {
+    "term": "warranted",
+    "group": 36,
+    "position": 24
+  },
+  {
+    "term": "wistful",
+    "group": 36,
+    "position": 25
+  }
+]
