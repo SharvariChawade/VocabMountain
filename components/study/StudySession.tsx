@@ -3,8 +3,10 @@
 import { AnimatePresence } from "motion/react";
 import { useCallback, useEffect, useRef, useState, type ReactNode } from "react";
 import { parseAsBoolean, parseAsString, useQueryStates } from "nuqs";
-import { Button } from "@/components/pouf/Button";
+import { Button, IconButton } from "@/components/pouf/Button";
+import { Select } from "@/components/pouf/controls";
 import { Empty, ErrorNote, Skeleton } from "@/components/pouf/feedback";
+import { Icon } from "@/components/pouf/Icon";
 import { Row, Stack } from "@/components/pouf/layout";
 import { Text } from "@/components/pouf/text";
 import { bury, enqueueGrade, flush, startGradeQueue } from "@/lib/grade-queue";
@@ -14,7 +16,17 @@ import type { QueueResponse, QueueRow, StudySettings } from "./types";
 
 const PREFETCH_AT = 5;
 
-export function StudySession({ settings }: { settings: StudySettings }) {
+type StudyGroup = { id: string; title: string; wordCount: number };
+
+export function StudySession({
+  settings,
+  groups,
+  activeDeckId,
+}: {
+  settings: StudySettings;
+  groups: StudyGroup[];
+  activeDeckId: string | null;
+}) {
   const [{ order, ahead }, setParams] = useQueryStates({
     order: parseAsString.withDefault(settings.studyOrder),
     ahead: parseAsBoolean.withDefault(false),
@@ -28,13 +40,21 @@ export function StudySession({ settings }: { settings: StudySettings }) {
   const [done, setDone] = useState(0);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
+  const [activeGroupId, setActiveGroupId] = useState(
+    groups.some((group) => group.id === activeDeckId) ? activeDeckId : null,
+  );
+  const [switchingGroup, setSwitchingGroup] = useState(false);
+  const [groupError, setGroupError] = useState(false);
+  const [handledIds, setHandledIds] = useState<Set<string>>(() => new Set());
 
   const shownAt = useRef(0);
   const handled = useRef(new Set<string>());
   const fetching = useRef(false);
+  const queueRequest = useRef<AbortController | null>(null);
 
   const row = queue[index];
   const exhausted = !loading && index >= queue.length;
+  const alreadyHandled = !!row && handledIds.has(row.word.id);
 
   // Reset the per-card state machine during render rather than in an effect —
   // the card must never paint one frame showing the previous word's back.
@@ -48,20 +68,25 @@ export function StudySession({ settings }: { settings: StudySettings }) {
   // /api/queue has no cursor, so a refetch overlaps with what we already hold.
   const load = useCallback(
     async (replace: boolean) => {
-      if (fetching.current) return;
+      if (fetching.current && !replace) return;
+      if (replace) queueRequest.current?.abort();
       fetching.current = true;
+      const controller = new AbortController();
+      queueRequest.current = controller;
       // No setLoading(true) here: on an order/ahead switch the current card
       // stays put until the new batch lands, which beats a skeleton flash.
       try {
         if (!replace) await flush(); // so the server stops returning what we graded
-        const params = new URLSearchParams({ order });
+        const params = new URLSearchParams({ order, deck: activeGroupId ?? "" });
         if (ahead) params.set("ahead", "true");
-        const res = await fetch(`/api/queue?${params}`);
+        const res = await fetch(`/api/queue?${params}`, { signal: controller.signal });
         if (!res.ok) throw new Error(String(res.status));
         const data: QueueResponse = await res.json();
+        if (controller.signal.aborted) return;
 
         const fresh = data.queue.filter((r) => !handled.current.has(r.word.id));
         if (replace) {
+          setHandledIds(new Set());
           setQueue(fresh);
           setIndex(0);
         } else {
@@ -71,19 +96,23 @@ export function StudySession({ settings }: { settings: StudySettings }) {
           });
         }
         setError(false);
-      } catch {
-        setError(true);
+      } catch (cause) {
+        if (!(cause instanceof DOMException && cause.name === "AbortError")) setError(true);
       } finally {
-        fetching.current = false;
-        setLoading(false);
+        if (queueRequest.current === controller) {
+          fetching.current = false;
+          setLoading(false);
+          if (replace) setSwitchingGroup(false);
+        }
       }
     },
-    [order, ahead],
+    [order, ahead, activeGroupId],
   );
 
   useEffect(() => {
     handled.current = new Set();
-    void load(true);
+    const timer = window.setTimeout(() => void load(true));
+    return () => window.clearTimeout(timer);
   }, [load]);
 
   useEffect(() => startGradeQueue(), []);
@@ -107,7 +136,11 @@ export function StudySession({ settings }: { settings: StudySettings }) {
   const commit = useCallback(
     (c: Commit) => {
       if (!row) return;
+      // Previous/next lets learners revisit a card, but a review is an event,
+      // not a mutable answer: submitting it twice would distort scheduling.
+      if (handled.current.has(row.word.id)) return;
       handled.current.add(row.word.id);
+      setHandledIds((previous) => new Set(previous).add(row.word.id));
 
       if (c.kind === "skip") {
         play("skip");
@@ -131,10 +164,70 @@ export function StudySession({ settings }: { settings: StudySettings }) {
     [row, revealed, hook],
   );
 
+  async function changeGroup(id: string) {
+    const nextGroupId = id || null;
+    if (nextGroupId === activeGroupId) return;
+
+    setSwitchingGroup(true);
+    setGroupError(false);
+    try {
+      const res = await fetch("/api/settings", {
+        method: "PATCH",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify({ activeDeckId: nextGroupId }),
+      });
+      if (!res.ok) throw new Error(String(res.status));
+      setDone(0);
+      setActiveGroupId(nextGroupId);
+    } catch {
+      setGroupError(true);
+      setSwitchingGroup(false);
+    }
+  }
+
+  function previousWord() {
+    setIndex((current) => Math.max(0, current - 1));
+  }
+
+  function nextWord() {
+    setIndex((current) => Math.min(queue.length - 1, current + 1));
+  }
+
+  const studyHeader = (
+    <Stack gap={2}>
+      <Select
+        label="Study group"
+        placeholder="All words"
+        value={activeGroupId ?? ""}
+        onChange={(id) => void changeGroup(id)}
+        disabled={switchingGroup}
+        options={[
+          { value: "", label: "All words" },
+          ...groups.map((group) => ({
+            value: group.id,
+            label: `${group.title} (${group.wordCount} words)`,
+          })),
+        ]}
+      />
+      {groupError && <ErrorNote>Couldn&apos;t switch study groups.</ErrorNote>}
+      <Row justify="between">
+        <Text size="sm" muted>
+          {done} done
+        </Text>
+        <Text size="sm" muted>
+          {row ? `Word ${index + 1} of ${queue.length}` : "No words left"}
+        </Text>
+      </Row>
+    </Stack>
+  );
+
   // Prefetch before the batch runs dry so the next card never waits.
   useEffect(() => {
     if (loading || error) return;
-    if (queue.length - index <= PREFETCH_AT) void load(false);
+    if (queue.length - index <= PREFETCH_AT) {
+      const timer = window.setTimeout(() => void load(false));
+      return () => window.clearTimeout(timer);
+    }
   }, [index, queue.length, loading, error, load]);
 
   useEffect(() => {
@@ -156,7 +249,7 @@ export function StudySession({ settings }: { settings: StudySettings }) {
 
   if (loading) {
     return (
-      <StudyLayout>
+      <StudyLayout header={studyHeader}>
         <Skeleton variant="card" />
       </StudyLayout>
     );
@@ -164,7 +257,7 @@ export function StudySession({ settings }: { settings: StudySettings }) {
 
   if (error && !row) {
     return (
-      <StudyLayout>
+      <StudyLayout header={studyHeader}>
         <Stack gap={4}>
           <ErrorNote>Couldn&apos;t load your queue.</ErrorNote>
           <Button onClick={() => void load(true)}>Try again</Button>
@@ -175,7 +268,7 @@ export function StudySession({ settings }: { settings: StudySettings }) {
 
   if (!row) {
     return (
-      <StudyLayout>
+      <StudyLayout header={studyHeader}>
         <Stack gap={5}>
           <Empty icon="trophy" title="Caught up">
             {done > 0 ? `${done} ${done === 1 ? "word" : "words"} today.` : "Nothing due right now."}
@@ -194,28 +287,49 @@ export function StudySession({ settings }: { settings: StudySettings }) {
   // so grading never requires scrolling on any screen size.
   return (
     <StudyLayout
-      header={
-        <Row justify="between">
-          <Text size="sm" muted>
-            {done} done
-          </Text>
-          <Text size="sm" muted>
-            {queue.length - index} left
-          </Text>
-        </Row>
-      }
+      header={studyHeader}
       footer={
         <Stack gap={3}>
+          <Row justify="between" wrap={false}>
+            <IconButton
+              icon={<Icon name="prev" size="sm" />}
+              label="Previous word"
+              onClick={previousWord}
+              disabled={switchingGroup || index === 0}
+            />
+            <Text size="sm" muted>
+              Browse words in this {activeGroupId ? "group" : "session"}
+            </Text>
+            <IconButton
+              icon={<Icon name="next" size="sm" />}
+              label="Next word"
+              onClick={nextWord}
+              disabled={switchingGroup || index + 1 >= queue.length}
+            />
+          </Row>
           <Row gap={3} justify="center">
-            <Button tone="pink" onClick={() => commit({ kind: "grade", knew: false })}>
+            <Button
+              tone="pink"
+              onClick={() => commit({ kind: "grade", knew: false })}
+              disabled={alreadyHandled || switchingGroup}
+            >
               Didn&apos;t know
             </Button>
-            <Button tone="mint" onClick={() => commit({ kind: "grade", knew: true })}>
+            <Button
+              tone="mint"
+              onClick={() => commit({ kind: "grade", knew: true })}
+              disabled={alreadyHandled || switchingGroup}
+            >
               Knew it
             </Button>
           </Row>
           <Row justify="center">
-            <Button variant="quiet" size="sm" onClick={() => commit({ kind: "skip" })}>
+            <Button
+              variant="quiet"
+              size="sm"
+              onClick={() => commit({ kind: "skip" })}
+              disabled={alreadyHandled || switchingGroup}
+            >
               Skip
             </Button>
           </Row>

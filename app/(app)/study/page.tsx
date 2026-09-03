@@ -1,4 +1,5 @@
 import { redirect } from "next/navigation";
+import { prisma } from "@/lib/prisma";
 import { currentUserId, settingsFor } from "@/lib/session";
 import { StudySession } from "@/components/study/StudySession";
 
@@ -8,7 +9,14 @@ export default async function StudyPage() {
   const userId = await currentUserId();
   if (!userId) redirect("/");
 
-  const s = await settingsFor(userId);
+  const [s, groups] = await Promise.all([
+    settingsFor(userId),
+    prisma.deck.findMany({
+      where: { kind: "GROUP" },
+      orderBy: { position: "asc" },
+      select: { id: true, title: true, _count: { select: { words: true } } },
+    }),
+  ]);
 
   return (
     <StudySession
@@ -19,6 +27,12 @@ export default async function StudyPage() {
         keyboardHints: s.keyboardHints,
         sound: s.sound,
       }}
+      activeDeckId={s.activeDeckId}
+      groups={groups.map((group) => ({
+        id: group.id,
+        title: group.title,
+        wordCount: group._count.words,
+      }))}
     />
   );
 }

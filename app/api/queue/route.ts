@@ -28,10 +28,13 @@ export async function GET(request: NextRequest) {
   const order = url.get("order") ?? settings.studyOrder;
   const ahead = url.get("ahead") === "true";
   const limit = Math.min(Number(url.get("limit") ?? settings.dailyGoal), 200);
+  // Study sends its visible selection explicitly. Other callers retain the
+  // saved-setting default when they omit the parameter.
+  const activeDeckId = url.has("deck") ? url.get("deck") || null : settings.activeDeckId;
   const now = new Date();
 
-  const deckFilter: Prisma.WordWhereInput = settings.activeDeckId
-    ? { decks: { some: { deckId: settings.activeDeckId } } }
+  const deckFilter: Prisma.WordWhereInput = activeDeckId
+    ? { decks: { some: { deckId: activeDeckId } } }
     : {};
 
   // A word with no Card row has never been seen, so "due" means due-or-absent.
@@ -57,8 +60,8 @@ export async function GET(request: NextRequest) {
     select: {
       ...WORD_FIELDS,
       cards: { where: { userId }, take: 1 },
-      decks: settings.activeDeckId
-        ? { where: { deckId: settings.activeDeckId }, select: { position: true }, take: 1 }
+      decks: activeDeckId
+        ? { where: { deckId: activeDeckId }, select: { position: true }, take: 1 }
         : { select: { position: true, deck: { select: { position: true } } }, take: 1 },
     },
     take: order === "shuffle" ? 500 : limit * 3,
