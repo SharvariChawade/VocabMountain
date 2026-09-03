@@ -1,5 +1,140 @@
 [
   {
+    "term": "abound",
+    "group": 1,
+    "position": 0,
+    "senseIndex": 0,
+    "senseGloss": "to exist in large numbers or amounts",
+    "partOfSpeech": "verb",
+    "meaning": "To exist or occur in great numbers or amounts.",
+    "pronunciation": "uh-BOWND",
+    "root": "Latin ab- abundantly + undare overflow",
+    "rootConfidence": "high",
+    "synonyms": [
+      "teem",
+      "overflow",
+      "flourish"
+    ],
+    "antonyms": [
+      "lack",
+      "decrease"
+    ],
+    "confusableWith": [],
+    "example": "Wildflowers abound in the meadow after the spring rains.",
+    "blank": "Wildflowers ______ in the meadow after the spring rains.",
+    "ungroundedSynonyms": [],
+    "ungroundedAntonyms": [],
+    "needsReview": []
+  },
+  {
+    "term": "amorphous",
+    "group": 1,
+    "position": 1,
+    "senseIndex": 0,
+    "senseGloss": "without a definite shape or form",
+    "partOfSpeech": "adjective",
+    "meaning": "Lacking a clear shape, structure, or defined character.",
+    "pronunciation": "uh-MOR-fus",
+    "root": "Greek a- without + morph shape",
+    "rootConfidence": "high",
+    "synonyms": [
+      "shapeless",
+      "formless",
+      "nebulous"
+    ],
+    "antonyms": [
+      "defined",
+      "structured"
+    ],
+    "confusableWith": [],
+    "example": "The committee offered only an amorphous proposal with no timeline or concrete objectives.",
+    "blank": "The committee offered only an ______ proposal with no timeline or concrete objectives.",
+    "ungroundedSynonyms": [],
+    "ungroundedAntonyms": [],
+    "needsReview": []
+  },
+  {
+    "term": "congenial",
+    "group": 1,
+    "position": 6,
+    "senseIndex": 0,
+    "senseGloss": "pleasant and agreeable in disposition",
+    "partOfSpeech": "adjective",
+    "meaning": "Friendly, pleasant, and naturally compatible with others.",
+    "pronunciation": "kun-JEEN-yul",
+    "root": "Latin con- together + genus kind",
+    "rootConfidence": "high",
+    "synonyms": [
+      "friendly",
+      "amiable",
+      "agreeable"
+    ],
+    "antonyms": [
+      "hostile",
+      "unfriendly"
+    ],
+    "confusableWith": [],
+    "example": "The congenial host made every guest feel welcome during the crowded reception.",
+    "blank": "The ______ host made every guest feel welcome during the crowded reception.",
+    "ungroundedSynonyms": [],
+    "ungroundedAntonyms": [],
+    "needsReview": []
+  },
+  {
+    "term": "conspicuous",
+    "group": 1,
+    "position": 7,
+    "senseIndex": 0,
+    "senseGloss": "easily seen or noticed",
+    "partOfSpeech": "adjective",
+    "meaning": "Very noticeable because of appearance, position, or prominence.",
+    "pronunciation": "kun-SPIK-yoo-us",
+    "root": "Latin conspicere observe closely",
+    "rootConfidence": "high",
+    "synonyms": [
+      "noticeable",
+      "prominent",
+      "salient"
+    ],
+    "antonyms": [
+      "inconspicuous",
+      "hidden"
+    ],
+    "confusableWith": [],
+    "example": "Her conspicuous red umbrella made her easy to find in the crowded station.",
+    "blank": "Her ______ red umbrella made her easy to find in the crowded station.",
+    "ungroundedSynonyms": [],
+    "ungroundedAntonyms": [],
+    "needsReview": []
+  },
+  {
+    "term": "cursory",
+    "group": 1,
+    "position": 8,
+    "senseIndex": 0,
+    "senseGloss": "done quickly without careful attention",
+    "partOfSpeech": "adjective",
+    "meaning": "Hasty and superficial rather than thorough or careful.",
+    "pronunciation": "KUR-suh-ree",
+    "root": "Latin currere run",
+    "rootConfidence": "high",
+    "synonyms": [
+      "hasty",
+      "superficial",
+      "perfunctory"
+    ],
+    "antonyms": [
+      "thorough",
+      "careful"
+    ],
+    "confusableWith": [],
+    "example": "A cursory review failed to reveal the serious errors hidden in the financial report.",
+    "blank": "A ______ review failed to reveal the serious errors hidden in the financial report.",
+    "ungroundedSynonyms": [],
+    "ungroundedAntonyms": [],
+    "needsReview": []
+  },
+  {
     "term": "austere",
     "group": 1,
     "position": 2,
